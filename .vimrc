@@ -1,20 +1,16 @@
-set tabstop=4 "Set tabs to 4 spaces
-set shiftwidth=4 "Set indentation to 4 when using << or >>
-set number "Show line numbers
-set ruler "Show row and col position
-set incsearch "Search for text as you type it using /
-colorscheme ron "Set default color scheme
-syntax on "Enable syntax highlighting
+syntax on
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug
-Plug 'morhetz/gruvbox'
-call plug
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set smartindent
+set nu
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
 
 "Compile/Run languages with <F9> and clear console
 autocmd filetype java nnoremap <F9> :w<CR> :!clear<CR> :!javac % && java %<<CR>
@@ -27,3 +23,13 @@ autocmd filetype c nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
 autocmd filetype cpp nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
 autocmd filetype java nnoremap <F8> :w<CR> :!clear<CR> :!javac *.java && java main<CR>
 
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-fugitive'
+Plug 'vim-utils/vim-man'
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
