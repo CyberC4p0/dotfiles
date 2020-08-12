@@ -3,7 +3,8 @@ syntax on
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set smartindent
-set nu
+noremap <F3> :set invnumber<CR>
+inoremap <F3> <C-O>:set invnumber<CR>
 set nowrap
 set smartcase
 set noswapfile
@@ -28,6 +29,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'morhetz/gruvbox'
+Plug 'tmsvg/pear-tree'
+Plug 'preservim/nerdtree'
+Plug 'frazrepo/vim-rainbow'
 
 call plug#end()
 
