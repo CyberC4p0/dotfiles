@@ -26,6 +26,7 @@ autocmd filetype java nnoremap <F8> :w<CR> :!clear<CR> :!javac *.java && java ma
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'ycm-core/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'morhetz/gruvbox'
@@ -34,6 +35,9 @@ Plug 'preservim/nerdtree'
 Plug 'frazrepo/vim-rainbow'
 
 call plug#end()
+
+"Plugin Configurations
+let g:rainbow_active = 1
 
 colorscheme gruvbox
 set background=dark
