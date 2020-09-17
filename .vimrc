@@ -48,7 +48,6 @@ let g:auto_save = 1
 "Vim Plugins
 call plug#begin('~/.vim/plugged')
 
-Plug '907th/vim-auto-save'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
