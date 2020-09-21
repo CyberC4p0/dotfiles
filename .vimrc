@@ -12,6 +12,8 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
+execute pathogen#infect()
+
 "----------------------------------
 
 "Compile/Run languages with <F9> and clear console
@@ -36,12 +38,25 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin '907th/vim-auto-save'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 filetype plugin indent on
 
 "Vundle Plugin Configurations
 let g:auto_save = 1
+
+"Syntastic Configurations
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_html_checkers = ['tidy']
+let g:syntastic_css_checkers = ['csslint']
 
 "----------------------------------
 
@@ -58,7 +73,9 @@ Plug 'frazrepo/vim-rainbow'
 
 call plug#end()
 
-"Vim Plugin Configurations
+"Vim Plug Configurations
+
+"Vim Rainbow Configurations
 let g:rainbow_active = 1
 
 colorscheme gruvbox
