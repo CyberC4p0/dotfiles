@@ -2,6 +2,7 @@ syntax on
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set smartindent
+set invnumber
 inoremap <F3> <C-O>:set invnumber<CR>
 noremap <F3> :set invnumber<CR>
 set nowrap
@@ -51,7 +52,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 "Syntastic Syntax Checkers
@@ -64,11 +65,8 @@ let g:syntastic_css_checkers = ['csslint']
 call plug#begin('~/.vim/plugged')
 
 Plug 'ycm-core/YouCompleteMe'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-utils/vim-man'
 Plug 'morhetz/gruvbox'
 Plug 'tmsvg/pear-tree'
-Plug 'preservim/nerdtree'
 Plug 'frazrepo/vim-rainbow'
 
 call plug#end()
