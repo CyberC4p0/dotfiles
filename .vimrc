@@ -64,6 +64,7 @@ let g:syntastic_css_checkers = ['csslint']
 "Vim Plug
 call plug#begin('~/.vim/plugged')
 
+Plug 'preservim/nerdtree'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'morhetz/gruvbox'
 Plug 'tmsvg/pear-tree'
