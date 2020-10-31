@@ -25,7 +25,15 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Shell
 
 # Linux
-Before you run the shell script included, you will need to clone the vimrc and install the plugins with one of the following commands in vim:
+You will need to install the plugin managers to get the plugins installed and working:
+### Vim-Plug
+`curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+
+### Vundle
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+### After installing the plugin managers, you will need to access the vimrc and run the following commands in vim:
 - *Vim-Plug:* `:PlugInstall`
 - *Vundle:* `:PluginInstall`
 
