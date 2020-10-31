@@ -19,7 +19,7 @@ noremap <F3> :set invnumber<CR>
 map <F4> :q!<CR>
 
 "-----------Split Window-----------
-map <F7> :vsplit<CR>
+map <F5> :vsplit<CR>
 map <Tab> <C-W>w
 
 "--------------Source--------------
@@ -85,7 +85,7 @@ call plug#end()
 let g:rainbow_active = 1
 
 "NERDTree
-map <F5> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 
 "Vim Theme
 colorscheme gruvbox
