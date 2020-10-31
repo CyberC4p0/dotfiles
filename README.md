@@ -25,8 +25,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Shell
 
 # Linux
-Before you run the shell script included, 
-You will need to clone the vimrc and install the plugins with one of the following commands in vim:
+Before you run the shell script included, you will need to clone the vimrc and install the plugins with one of the following commands in vim:
 - *Vim-Plug:* :PlugInstall
 - *Vundle:* :PluginInstall
 
