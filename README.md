@@ -33,7 +33,7 @@ You will need to install the plugin managers to get the plugins installed and wo
 ### Vundle
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-### After installing the plugin managers, you will need to access the vimrc and run the following commands in vim:
+After installing the plugin managers, you will need to access the vimrc and run the following commands in vim:
 - *Vim-Plug:* `:PlugInstall`
 - *Vundle:* `:PluginInstall`
 
