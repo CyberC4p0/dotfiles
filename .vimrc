@@ -16,18 +16,6 @@ set incsearch
 execute pathogen#infect()
 
 "----------------------------------
-"Compile/Run languages with <F9> and clear console
-autocmd filetype java nnoremap <F9> :w<CR> :!clear<CR> :!javac % && java %<<CR>
-autocmd filetype c nnoremap <F9> :w<CR> :!clear<CR> :!gcc % -o %< && ./%<<CR>
-autocmd filetype cpp nnoremap <F9> :w<CR> :!clear<CR> :!g++ % -o %< && ./%<<CR>
-autocmd filetype python nnoremap <F9> :w<CR> :!clear<CR> :!python3 ./%<CR>
-autocmd filetype perl nnoremap <F9> :w<CR> :!clear<CR> :!perl ./%<CR>
-"Compile/Run C/CPP using Makefile or multiple java files with <F8> and clear console
-autocmd filetype c nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
-autocmd filetype cpp nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
-autocmd filetype java nnoremap <F8> :w<CR> :!clear<CR> :!javac *.java && java main<CR>
-
-"----------------------------------
 "Vundle Plugins
 set nocompatible
 filetype off
@@ -87,6 +75,22 @@ let g:rainbow_active = 1
 "NERDTree
 map <F4> :NERDTreeToggle<CR>
 
-"Theme
+"Vim Theme
 colorscheme gruvbox
 set background=dark
+
+"----------------------------------
+"Compile/Run languages with <F9> and clear console
+autocmd filetype java nnoremap <F9> :w<CR> :!clear<CR> :!javac % && java %<<CR>
+autocmd filetype c nnoremap <F9> :w<CR> :!clear<CR> :!gcc % -o %< && ./%<<CR>
+autocmd filetype cpp nnoremap <F9> :w<CR> :!clear<CR> :!g++ % -o %< && ./%<<CR>
+autocmd filetype python nnoremap <F9> :w<CR> :!clear<CR> :!python3 ./%<CR>
+autocmd filetype perl nnoremap <F9> :w<CR> :!clear<CR> :!perl ./%<CR>
+"Run HTML on Windows
+"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>
+"Run HTML on Linux
+"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!google-chrome %<CR>
+"Compile/Run C/CPP using Makefile or multiple java files with <F8> and clear console
+autocmd filetype c nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
+autocmd filetype cpp nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
+"----------------------------------
