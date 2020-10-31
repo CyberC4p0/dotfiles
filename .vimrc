@@ -2,9 +2,6 @@ syntax on
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set smartindent
-set invnumber
-inoremap <F3> <C-O>:set invnumber<CR>
-noremap <F3> :set invnumber<CR>
 set nowrap
 set smartcase
 set noswapfile
@@ -13,10 +10,25 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
+"-----------Line Numbers-----------
+set invnumber
+inoremap <F3> <C-O>:set invnumber<CR>
+noremap <F3> :set invnumber<CR>
+
+"--------------Quit----------------
+map <F4> :q!<CR>
+
+"-----------Split Window-----------
+map <F7> :vsplit<CR>
+map <Tab> <C-W>w
+
+"--------------Source--------------
+map <F12> :source %<CR>
+
+"------------Pathogen--------------
 execute pathogen#infect()
 
-"----------------------------------
-"Vundle Plugins
+"---------Vundle Plugins-----------
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -47,7 +59,7 @@ let g:syntastic_auto_jump = 0
 let g:syntastic_mode_map = {
             \"mode": "passive" }
 
-map <F2> :SyntasticToggleMode<CR>
+map <F6> :SyntasticToggleMode<CR>
 
 "Syntastic Syntax Checkers
 let g:syntastic_python_checkers = ['pylint']
@@ -73,7 +85,7 @@ call plug#end()
 let g:rainbow_active = 1
 
 "NERDTree
-map <F4> :NERDTreeToggle<CR>
+map <F5> :NERDTreeToggle<CR>
 
 "Vim Theme
 colorscheme gruvbox
