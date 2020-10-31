@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Pathogen Installation (Required for Syntastic)
+# Pathogen Installation (Required for Syntastic)
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -17,7 +17,7 @@ sudo apt install tidy
 # CSSLint
 sudo npm install -g csslint
 
-#Javac
+# Javac
 sudo apt install default-jre
 sudo apt install default-jdk
 
