@@ -26,6 +26,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # YouCompleteMe Installation
-apt install build-essential cmake vim python3-dev
+sudo apt install build-essential cmake vim python3-dev
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
