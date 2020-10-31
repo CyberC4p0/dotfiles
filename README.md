@@ -1,5 +1,5 @@
 # Workstation Vimrc Config
-Supported systems:
+*Supported systems:*
 - Linux (Any distros based off of debian)
 - Windows: Windows Subsystem for Linux (Ubuntu/Debian/Kali Linux)
 Article on how to enable Windows Subsystem for Linux https://www.windowscentral.com/install-windows-subsystem-linux-windows-10
@@ -26,10 +26,9 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 
 # Linux
 Before you run the shell script included, 
-
 You will need to clone the vimrc and install the plugins with one of the following commands in vim:
-- *Vim-Plug*: :PlugInstall
-- *Vundle*: :PluginInstall
+- *Vim-Plug:* :PlugInstall
+- *Vundle:* :PluginInstall
 
 
 
