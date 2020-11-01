@@ -61,7 +61,7 @@ Remove the " symbol in order to uncomment in the vimrc
 ### Linux (Also For Windows Subsystem for Linux)
 First run the installation shell script with the following command:
 ```
-bash ./installation.sh
+sh ./installation.sh
 ```
 After running the installation script, you will need to access the vimrc and run the following commands in vim:
 - *Vim-Plug:* `:PlugInstall`
