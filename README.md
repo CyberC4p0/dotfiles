@@ -25,7 +25,13 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Pear Tree for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
 - Vim rainbow for different color for symbols to be able to be destinguished easier.
 
-# Supported F9 filetypes/languages
+### Integrated Syntastic Checkers
+- CSSLint (For CSS)
+- Javac (For Java)
+- Pylint (For Python)
+- Tidy (For HTML)
+
+### Supported F9 filetypes/languages
 - C
 - CPP
 - HTML
@@ -34,7 +40,9 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Python
 - Shell
 
-# Linux (Also For Windows Subsystem for Linux)
+#Installation
+
+## Linux (Also For Windows Subsystem for Linux)
 First run the installation shell script and then follow the next steps:
 
 After running the installation script, you will need to access the vimrc and run the following commands in vim:
@@ -46,3 +54,5 @@ After Installing the plugins, you will need to install YouCompleteMe manually wi
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
 ```
+
+After you have followed all the instructions, ENJOY!
