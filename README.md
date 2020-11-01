@@ -40,6 +40,19 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Python
 - Shell
 
+### Running HTML Via Vim
+*Read only if you plan to run HTML on your system*
+
+You will need to uncomment either of the following HTML command mappings depending on which system you're on:
+
+#### Linux
+`"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!google-chrome %<CR>`
+
+Remove the " symbol in order to uncomment in the vimrc
+#### Windows Subsystem For Linux
+`"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>`
+
+Remove the " symbol in order to uncomment in the vimrc
 # Installation
 
 ## Linux (Also For Windows Subsystem for Linux)
@@ -54,5 +67,4 @@ After Installing the plugins, you will need to install YouCompleteMe manually wi
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
 ```
-
 After you have followed all the instructions, ENJOY!
