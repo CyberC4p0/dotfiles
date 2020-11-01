@@ -40,7 +40,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Python
 - Shell
 
-#Installation
+# Installation
 
 ## Linux (Also For Windows Subsystem for Linux)
 First run the installation shell script and then follow the next steps:
