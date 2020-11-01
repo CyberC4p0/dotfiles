@@ -1,6 +1,6 @@
 # Workstation Vimrc Config
 *Supported systems:*
-- Linux (Any distros based off of debian)
+- Linux (Any distro based off of debian)
 - Windows: Windows Subsystem for Linux (Ubuntu/Debian/Kali Linux)
 Article on how to enable Windows Subsystem for Linux https://www.windowscentral.com/install-windows-subsystem-linux-windows-10
 
