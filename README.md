@@ -40,6 +40,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Perl
 - Python
 - Shell
+
 *Note:* You will need to install the languages yourself with the exception of Java since in comes backed up on the installation script.
 
 ## Running HTML via Vim
