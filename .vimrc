@@ -102,7 +102,7 @@ autocmd filetype perl nnoremap <F9> :w<CR> :!clear<CR> :!perl ./%<CR>
 "autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>
 "Run HTML on Linux
 "autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!google-chrome %<CR>
-"Compile/Run C/CPP using Makefile or multiple java files with <F8> and clear console
+"Compile/Run C/CPP using Makefile with <F8> and clear console
 autocmd filetype c nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
 autocmd filetype cpp nnoremap <F8> :w<CR> :!clear<CR> :!make && ./%<<CR>
 "----------------------------------
