@@ -1,10 +1,11 @@
 # Workstation Vimrc Config
 *Supported systems:*
-- Linux (Any distro based off of debian)
-- Windows: Windows Subsystem for Linux (Ubuntu/Debian/Kali Linux)
+- *Linux*: (Any distro based off of debian)
+- *Windows*: Windows Subsystem for Linux (Ubuntu/Debian/Kali Linux)
+
 Article on how to enable Windows Subsystem for Linux https://www.windowscentral.com/install-windows-subsystem-linux-windows-10
 
-# Features/Keymappings
+## Features/Keymappings
 ### Keymappings
 - `<F2>` to Toggle NERDTree (`:NERDTreeToggle`)
 - `<F3>` to toggle line numbers (`:set invnumber`)
@@ -39,11 +40,12 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Perl
 - Python
 - Shell
+*Note:* You will need to install the languages yourself with the exception of Java since in comes backed up on the installation script.
 
-## Running HTML Via Vim
+## Running HTML via Vim
 *Read only if you plan to run HTML on your system*
 
-You will need to uncomment either of the following HTML command mappings depending on which system you're on:
+You will need to uncomment either of the following HTML commands depending on which system you're on:
 
 ### Linux
 `"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!google-chrome %<CR>`
@@ -53,9 +55,9 @@ Remove the " symbol in order to uncomment in the vimrc
 `"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>`
 
 Remove the " symbol in order to uncomment in the vimrc
-# Installation
+## Installation
 
-## Linux (Also For Windows Subsystem for Linux)
+### Linux (Also For Windows Subsystem for Linux)
 First run the installation shell script and then follow the next steps:
 
 After running the installation script, you will need to access the vimrc and run the following commands in vim:
