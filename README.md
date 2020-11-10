@@ -52,7 +52,7 @@ You will need to uncomment either of the following HTML commands depending on wh
 `"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!google-chrome %<CR>`
 
 Remove the " symbol in order to uncomment in the vimrc
-### Windows Subsystem For Linux
+### Windows (Subsystem For Linux)
 `"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>`
 
 Remove the " symbol in order to uncomment in the vimrc
