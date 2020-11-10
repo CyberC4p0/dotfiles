@@ -11,7 +11,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - `<F3>` to toggle line numbers (`:set invnumber`)
 - `<F4>` to quit without saving (`:q!`)
 - `<F5>` to open a split window (`:vsplit`)
-- `<Tab>` to switch between split windows (CTRL+w+w)
+- `<Tab>` to switch between split windows (`ctrl+w+w`)
 - `<F6>` to toggle between passive/active syntastic checker (`:SyntasticToggleMode`)
 - `<F8>` to compile/run C/CPP using Makefile and clear console
 - `<F9>` to compile/run languages and clear console
