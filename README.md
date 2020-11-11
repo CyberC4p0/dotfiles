@@ -7,7 +7,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 
 ## Features/Keymappings
 ### Keymappings
-- `U` ti undo in normal mode in Vim
+- `U` to undo in normal mode in Vim
 - `<F2>` to toggle NERDTree (`:NERDTreeToggle`)
 - `<F3>` to toggle Undotree (`:UndotreeToggle`)
 - `<F5>` to open a split window (`:vsplit`)
