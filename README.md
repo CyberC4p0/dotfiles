@@ -69,7 +69,7 @@ Remove the " symbol in order to uncomment in the vimrc
 ## Installation
 
 ### Linux (Also For Windows Subsystem for Linux)
-First run the installation shell script with the following command:
+First run the installation shell script with the following commands:
 ```
 cd Workstation-vimrc-config
 sh ./installation.sh
