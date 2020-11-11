@@ -62,10 +62,6 @@ let g:auto_save = 1
 nnoremap <F3> :UndotreeToggle<CR>
 
 "------------Syntastic-------------
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
@@ -96,7 +92,7 @@ call plug#end()
 
 "Vim Plug Configurations
 
-"Vim Rainbow
+"-------------Vim Rainbow----------
 let g:rainbow_active = 1
 
 "NERDTree
@@ -116,7 +112,11 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_solarized_bg='dark'
 
-"-------------Vim Fugitive---------
+"-----------Status Line-----------
+"Syntastic
+set statusline+=%{FugitiveHead()}
+
+"Vim Fugitive
 set statusline+=%{FugitiveHead()}
 
 "----------------------------------
