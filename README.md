@@ -7,17 +7,24 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 
 ## Features/Keymappings
 ### Keymappings
-- `<F2>` to Toggle NERDTree (`:NERDTreeToggle`)
-- `<F3>` to toggle line numbers (`:set invnumber`)
-- `<F4>` to quit without saving (`:q!`)
+- `<F2>` to toggle NERDTree (`:NERDTreeToggle`)
+- `<F3>` to toggle Undotree (`:UndotreeToggle`)
 - `<F5>` to open a split window (`:vsplit`)
-- `<Tab>` to switch between split windows (`ctrl+w+w`)
 - `<F6>` to toggle between passive/active syntastic checker (`:SyntasticToggleMode`)
 - `<F8>` to compile/run C/CPP using Makefile and clear console
 - `<F9>` to compile/run languages and clear console
+- `<F10>` to toggle line numbers (`:set invnumber`)
 - `<F12>` to source file (`:source %`)
+- `<Leader>h` to switch to left window (`:wincmd h`)
+- `<Leader>j` to switch to bottom window (`:wincmd j`)
+- `<Leader>k` to switch to upper window (`:wincmd k`)
+- `<Leader>l` to switch to right window (`:wincmd l`)
+- `<Leader>+` to resize split window +5 (`:vertical resize +5`)
+- `<Leader>-` to resize split window -5 (`:vertical resize -5`)
+- `<Leader>q` to quit forcefully (`:q!`)
 
 ### Features
+- Leader key is ```
 - Autosave everytime you go into normal mode
 - Syntax checker everytime active mode is toggled with `<F6>` and into normal mode in vim. (Default: Passive)
 - Nerdtree for easy file tree access
