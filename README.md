@@ -67,6 +67,7 @@ sh ./installation.sh
 After running the installation script, you will need to access the vimrc and run the following commands in vim:
 - *Vim-Plug:* `:PlugInstall`
 - *Vundle:* `:PluginInstall`
+
 Then you hit `<F12>` to source the vimrc and you should see the customizations and the color scheme!
 
 After Installing the plugins, you will need to install YouCompleteMe manually with the following commands:
