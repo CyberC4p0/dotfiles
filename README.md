@@ -24,14 +24,17 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - `<Leader>q` to quit forcefully (`:q!`)
 
 ### Features
-- Leader key is ```
+- Leader key is `
 - Autosave everytime you go into normal mode
 - Syntax checker everytime active mode is toggled with `<F6>` and into normal mode in vim. (Default: Passive)
 - Nerdtree for easy file tree access
+- Undotree to access recent undo's
 - Autocompleter for vim.. Depending on filetypes, it will give you a brief description about certain functions and objects
 - The greatest color scheme of all time: "Gruvbox"! As said so by "The Primeagen".
 - Pear Tree for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
 - Vim rainbow for different color for symbols to be able to be destinguished easier.
+- Airline and Airline theme
+- Vim Fugitive for Git and Fugivitive for statusline
 
 ### Integrated Syntastic Checkers
 - CSSLint (For CSS)
