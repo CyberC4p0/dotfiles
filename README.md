@@ -32,7 +32,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Autocompleter for vim.. Depending on filetypes, it will give you a brief description about certain functions and objects
 - The greatest color scheme of all time: "Gruvbox"! As said so by "The Primeagen".
 - Pear Tree for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
-- Vim rainbow for different color for symbols to be able to be destinguished easier.
+- Vim Rainbow for different colors for symbols to be able to be destinguished easier.
 - Airline and Airline theme
 - Vim Fugitive for Git and statusline feature
 
