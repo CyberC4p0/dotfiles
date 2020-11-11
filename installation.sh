@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Pathogen Installation (Required for Syntastic)
+# Pathogen Installation
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
