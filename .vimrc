@@ -114,7 +114,9 @@ let g:airline_solarized_bg='dark'
 
 "-----------Status Line-----------
 "Syntastic
-set statusline+=%{FugitiveHead()}
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 "Vim Fugitive
 set statusline+=%{FugitiveHead()}
