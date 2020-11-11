@@ -19,7 +19,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 
 ### Features
 - Autosave everytime you go into normal mode
-- Syntax checker everytime active mode is toggled with `<F6>` and into normal mode in vim
+- Syntax checker everytime active mode is toggled with `<F6>` and into normal mode in vim. (Default: Passive)
 - Nerdtree for easy file tree access
 - Autocompleter for vim.. Depending on filetypes, it will give you a brief description about certain functions and objects
 - The greatest color scheme of all time: "Gruvbox"! As said so by "The Primeagen".
@@ -67,6 +67,7 @@ sh ./installation.sh
 After running the installation script, you will need to access the vimrc and run the following commands in vim:
 - *Vim-Plug:* `:PlugInstall`
 - *Vundle:* `:PluginInstall`
+Then you hit `<F12>` to source the vimrc and you should see the customizations and the color scheme!
 
 After Installing the plugins, you will need to install YouCompleteMe manually with the following commands:
 ```
