@@ -7,6 +7,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 
 ## Features/Keymappings
 ### Keymappings
+- `U` ti undo in normal mode in Vim
 - `<F2>` to toggle NERDTree (`:NERDTreeToggle`)
 - `<F3>` to toggle Undotree (`:UndotreeToggle`)
 - `<F5>` to open a split window (`:vsplit`)
@@ -25,6 +26,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 
 ### Features
 - Leader key is `
+- Syntax Highlighting
 - Autosave everytime you go into normal mode
 - Syntax checker everytime active mode is toggled with `<F6>` and into normal mode in vim. (Default: Passive)
 - Nerdtree for easy file tree access
