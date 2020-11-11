@@ -34,7 +34,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Pear Tree for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
 - Vim rainbow for different color for symbols to be able to be destinguished easier.
 - Airline and Airline theme
-- Vim Fugitive for Git and Fugivitive for statusline
+- Vim Fugitive for Git and statusline feature
 
 ### Integrated Syntastic Checkers
 - CSSLint (For CSS)
