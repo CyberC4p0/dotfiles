@@ -9,18 +9,26 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
+let mapleader="`"
 
 "-----------Line Numbers-----------
 set invnumber
-inoremap <F3> <C-O>:set invnumber<CR>
-noremap <F3> :set invnumber<CR>
+inoremap <F10> <C-O>:set invnumber<CR>
+noremap <F10> :set invnumber<CR>
 
 "--------------Quit----------------
-map <F4> :q!<CR>
+map <Leader>q :q!<CR>
 
 "-----------Split Window-----------
 map <F5> :vsplit<CR>
-map <Tab> <C-W>w
+nnoremap <Leader>h :wincmd h<CR>
+nnoremap <Leader>j :wincmd j<CR>
+nnoremap <Leader>k :wincmd k<CR>
+nnoremap <Leader>l :wincmd l<CR>
+
+"----------Resizing Windows--------
+nnoremap <Leader>+ :vertical resize +5<CR>
+nnoremap <Leader>- :vertical resize -5<CR>
 
 "--------------Source--------------
 map <F12> :source %<CR>
@@ -38,16 +46,22 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin '907th/vim-auto-save'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'mbbill/undotree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 filetype plugin indent on
 
 "Vundle Plugin Configurations
 
-"Autosave
+"------------Autosave--------------
 let g:auto_save = 1
 
-"Syntastic
+"------------Undotree--------------
+nnoremap <F3> :UndotreeToggle<CR>
+
+"------------Syntastic-------------
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -76,6 +90,7 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'morhetz/gruvbox'
 Plug 'tmsvg/pear-tree'
 Plug 'frazrepo/vim-rainbow'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -87,9 +102,22 @@ let g:rainbow_active = 1
 "NERDTree
 map <F2> :NERDTreeToggle<CR>
 
-"Vim Theme
-colorscheme gruvbox
+"------------Color Scheme----------
+set t_Co=256
 set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
+
+"-----------Vim Airline-----------
+let g:airline_theme='gruvbox'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_solarized_bg='dark'
+
+"-------------Vim Fugitive---------
+set statusline+=%{FugitiveHead()}
 
 "----------------------------------
 "Compile/Run languages with <F9> and clear console
