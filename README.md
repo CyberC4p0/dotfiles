@@ -10,7 +10,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - `U` to undo in normal mode in Vim
 - `<F2>` to toggle NERDTree (`:NERDTreeToggle`)
 - `<F3>` to toggle Undotree (`:UndotreeToggle`)
-- `<F5>` to open a split window (`:vsplit`)
+- `<F5>` to open a split window (`:vnew`)
 - `<F6>` to toggle between passive/active syntastic checker (`:SyntasticToggleMode`)
 - `<F8>` to compile/run C/CPP using Makefile and clear console
 - `<F9>` to compile/run languages and clear console
