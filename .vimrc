@@ -20,7 +20,7 @@ noremap <F10> :set invnumber<CR>
 map <Leader>q :q!<CR>
 
 "-----------Split Window-----------
-map <F5> :vsplit<CR>
+map <F5> :vnew<CR>
 nnoremap <Leader>h :wincmd h<CR>
 nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
