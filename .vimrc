@@ -9,6 +9,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
+set splitright
 let mapleader=","
 
 "-----------Line Numbers-----------
@@ -111,7 +112,6 @@ map <F2> :NERDTreeToggle<CR>
 nnoremap <Leader>g :GV<CR>
 
 "------------Color Scheme----------
-set t_Co=256
 set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
