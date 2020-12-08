@@ -42,6 +42,8 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Vim Rainbow for different colors for symbols to be able to be destinguished easier.
 - Airline and Airline theme
 - Vim Fugitive for Git and statusline feature
+- Git Commit Browser for viewing all commits
+- Mouse feature (Default: Disabled)
 
 ### Integrated Syntastic Checkers
 - CSSLint (For CSS)
