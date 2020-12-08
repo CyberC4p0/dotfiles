@@ -23,9 +23,14 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - `<Leader>+` to resize split window +5 (`:vertical resize +5`)
 - `<Leader>-` to resize split window -5 (`:vertical resize -5`)
 - `<Leader>q` to quit forcefully (`:q!`)
+- `<Leader>g` to open git commit browser (`:GV`)
+- `<Leader>m` to enable mouse scrolling in all modes on WSL (`:set mouse=a`)
+- `<Leader>n` to disable mouse scrolling in all modes on WSL (`:set mouse=`)
+- `<C-Left>` to switch to previous tab with left arrow key (`:tabprevious`)
+- `<C-Right>` to switch to next tab with right arrow key (`:tabnext`)
 
 ### Features
-- Leader key is `
+- Leader key is ,
 - Syntax Highlighting
 - Autosave everytime you go into normal mode
 - Syntax checker everytime active mode is toggled with `<F6>` and into normal mode in vim. (Default: Passive)
@@ -47,15 +52,16 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 ### Supported F9 filetypes/languages
 - C
 - CPP
-- HTML
+- HTML (Under Construction)
 - Java
+- Markdown (Under Construction)
 - Perl
 - Python
 - Shell
 
 *Note:* You will need to install the languages yourself with the exception of Java since in comes backed up on the installation script.
 
-## Running HTML via Vim
+## Viewing HTML via Vim in browser
 *Read only if you plan to run HTML on your system*
 
 You will need to uncomment either of the following HTML commands depending on which system you're on:
@@ -65,9 +71,13 @@ You will need to uncomment either of the following HTML commands depending on wh
 
 Remove the " symbol in order to uncomment in the vimrc
 ### Windows (Subsystem For Linux)
-`"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>`
+*Under Construction*
 
 Remove the " symbol in order to uncomment in the vimrc
+
+## Viewing Markdown via Vim in browser
+*Under Construction*
+
 ## Installation
 
 ### Linux (Also For Windows Subsystem for Linux)
