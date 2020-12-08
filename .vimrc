@@ -9,7 +9,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-let mapleader="`"
+let mapleader=","
 
 "-----------Line Numbers-----------
 set invnumber
