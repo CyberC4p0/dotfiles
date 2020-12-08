@@ -16,6 +16,10 @@ set invnumber
 inoremap <F10> <C-O>:set invnumber<CR>
 noremap <F10> :set invnumber<CR>
 
+"-----------Mouse Scrolling--------
+map <Leader>m :set mouse=a<CR>
+map <Leader>n :set mouse=<CR>
+
 "--------------Quit----------------
 map <Leader>q :q!<CR>
 
@@ -29,6 +33,10 @@ nnoremap <Leader>l :wincmd l<CR>
 "----------Resizing Windows--------
 nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
+
+"----------------Tabs--------------
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
 
 "--------------Source--------------
 map <F12> :source %<CR>
@@ -75,7 +83,7 @@ map <F6> :SyntasticToggleMode<CR>
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_css_checkers = ['csslint']
-let g:syntastic_java_checkers = ['javac']
+let g:syntastic_java_checkers = ['javac']:
 
 "----------------------------------
 "Vim Plug
@@ -87,6 +95,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tmsvg/pear-tree'
 Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 
 call plug#end()
 
@@ -95,8 +104,11 @@ call plug#end()
 "-------------Vim Rainbow----------
 let g:rainbow_active = 1
 
-"NERDTree
+"------------NERDTree--------------
 map <F2> :NERDTreeToggle<CR>
+
+"-----------Git Commit-------------
+nnoremap <Leader>g :GV<CR>
 
 "------------Color Scheme----------
 set t_Co=256
@@ -128,6 +140,7 @@ autocmd filetype c nnoremap <F9> :w<CR> :!clear<CR> :!gcc % -o %< && ./%<<CR>
 autocmd filetype cpp nnoremap <F9> :w<CR> :!clear<CR> :!g++ % -o %< && ./%<<CR>
 autocmd filetype python nnoremap <F9> :w<CR> :!clear<CR> :!python3 ./%<CR>
 autocmd filetype perl nnoremap <F9> :w<CR> :!clear<CR> :!perl ./%<CR>
+"View MD (Markdown) on WSL
 "Run HTML on Windows
 "autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>
 "Run HTML on Linux
