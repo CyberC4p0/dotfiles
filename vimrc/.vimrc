@@ -84,7 +84,7 @@ map <F6> :SyntasticToggleMode<CR>
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_css_checkers = ['csslint']
-let g:syntastic_java_checkers = ['javac']:
+let g:syntastic_java_checkers = ['javac']
 
 "----------------------------------
 "Vim Plug
