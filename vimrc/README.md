@@ -37,11 +37,11 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Nerdtree for easy file tree access
 - Undotree to access recent undo's
 - Autocompleter for vim.. Depending on filetypes, it will give you a brief description about certain functions and objects
-- The greatest color scheme of all time: "Gruvbox"! As said so by "The Primeagen".
-- Pear Tree for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
-- Vim Rainbow for different colors for symbols to be able to be destinguished easier.
+- The greatest color scheme of all time: *Gruvbox*! As said so by "The Primeagen".
+- *Pear Tree* for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
+- *Vim Rainbow* for different colors for symbols to be able to be destinguished easier.
 - Airline and Airline theme
-- Vim Fugitive for Git and statusline feature
+- *Vim Fugitive* for Git and statusline feature
 - Git Commit Browser for viewing all commits
 - Mouse feature (Default: Disabled)
 
@@ -91,7 +91,7 @@ After running the installation script, you will need to access the vimrc and run
 
 Then you hit `<F12>` to source the vimrc and you should see the customizations and the color scheme!
 
-After Installing the plugins, you will need to install YouCompleteMe manually with the following commands:
+After Installing the plugins, you will need to install *YouCompleteMe* manually with the following commands:
 ```
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
