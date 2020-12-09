@@ -97,6 +97,7 @@ Plug 'tmsvg/pear-tree'
 Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -110,6 +111,11 @@ map <F2> :NERDTreeToggle<CR>
 
 "-----------Git Commit-------------
 nnoremap <Leader>g :GV<CR>
+
+"-----------Git Gutter-------------
+set signcolumn=yes
+map <Leader>ge :GitGutterLineHighlightsEnable<CR>
+map <Leader>gd :GitGutterLineHighlightsDisable<CR> 
 
 "------------Color Scheme----------
 set background=dark
@@ -133,9 +139,17 @@ set statusline+=%*
 "Vim Fugitive
 set statusline+=%{FugitiveHead()}
 
+"Git Gutter
+function! GitStatus()
+	let [a,m,r] = GitGutterGetHunkSummary()
+	return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
+
 "----------------------------------
 "Compile/Run languages with <F9> and clear console
 autocmd filetype java nnoremap <F9> :w<CR> :!clear<CR> :!javac % && java %<<CR>
+autocmd filetype sh nnoremap <F9> :w<CR> :!clear<CR> :!bash %<CR>
 autocmd filetype c nnoremap <F9> :w<CR> :!clear<CR> :!gcc % -o %< && ./%<<CR>
 autocmd filetype cpp nnoremap <F9> :w<CR> :!clear<CR> :!g++ % -o %< && ./%<<CR>
 autocmd filetype python nnoremap <F9> :w<CR> :!clear<CR> :!python3 ./%<CR>
