@@ -1,13 +1,16 @@
 # Aliases for WSL
 
-# Aliases for System
+# ------------------Aliases for System--------------------
 # - System Update
 alias update='sudo apt-get update'
 
 # - System Upgrade
 alias upgrade='sudo apt-get update'
 
-# - Aliases for Changing Directories
+# - Clear Terminal
+alias cr='clear'
+
+# -----------Aliases for Changing Directories-------------
 # - Windows Home Directory
 alias home='cd /mnt/c/Users/jmemb'
 
