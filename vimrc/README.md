@@ -37,11 +37,11 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Nerdtree for easy file tree access
 - Undotree to access recent undo's
 - Autocompleter for vim.. Depending on filetypes, it will give you a brief description about certain functions and objects
-- The greatest color scheme of all time: "Gruvbox"! As said so by "The Primeagen".
-- Pear Tree for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
-- Vim Rainbow for different colors for symbols to be able to be destinguished easier.
+- The greatest color scheme of all time: *Gruvbox*! As said so by "The Primeagen".
+- *Pear Tree* for autopairs (Ex: `()`, `{}`, `[]`, `<>`, `""`, `''`)
+- *Vim Rainbow* for different colors for symbols to be able to be destinguished easier.
 - Airline and Airline theme
-- Vim Fugitive for Git and statusline feature
+- *Vim Fugitive* for Git and statusline feature
 - Git Commit Browser for viewing all commits
 - Mouse feature (Default: Disabled)
 
@@ -61,7 +61,7 @@ Article on how to enable Windows Subsystem for Linux https://www.windowscentral.
 - Python
 - Shell
 
-*Note:* You will need to install the languages yourself with the exception of Java since in comes backed up on the installation script.
+*Note:* You will need to install the languages yourself with the exception of Java since in comes backed up on the setup script.
 
 ## Viewing HTML via Vim in browser
 *Read only if you plan to run HTML on your system*
@@ -81,9 +81,8 @@ Remove the `"` symbol in order to uncomment in the vimrc
 ## Installation
 
 ### Linux (Also For Windows Subsystem for Linux)
-First run the installation shell script with the following commands:
+First run the setup script:
 ```
-cd Workstation-vimrc-config
 sh ./installation.sh
 ```
 After running the installation script, you will need to access the vimrc and run the following commands in vim:
@@ -92,7 +91,7 @@ After running the installation script, you will need to access the vimrc and run
 
 Then you hit `<F12>` to source the vimrc and you should see the customizations and the color scheme!
 
-After Installing the plugins, you will need to install YouCompleteMe manually with the following commands:
+After Installing the plugins, you will need to install *YouCompleteMe* manually with the following commands:
 ```
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
