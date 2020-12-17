@@ -45,7 +45,7 @@ clear
 #---------------------Programming Languages------------------
 
 # Message
-echo Setting up 2 programming languages...
+echo Setting up 3 programming languages...
 sleep 5
 
 # Python
@@ -60,10 +60,15 @@ sleep 3
 # C
 sudo apt install build-essential
 
+# Java
+sudo apt install default-jre
+sudo apt install default-jdk
+
 # Message
 echo C Has been installed...
 sleep 3
-echo 2 Programming languages have been installed...
+
+echo 3 Programming languages have been installed...
 sleep 5
 
 # Clear Terminal
@@ -74,14 +79,6 @@ clear
 # Message
 echo Setting up Vim...
 sleep 5
-
-# Pathogen Installation
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-# Message
-echo Pathogen has been installed...
-sleep 3
 
 # Vim Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -98,56 +95,17 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo Vundle has been installed...
 sleep 3
 
-# Syntastic Syntax Checkers Installation
-
-# Message
-echo Setting up Syntastic syntax checkers...
-sleep 3
-
-# Pylint (For Python)
-sudo apt-get install pylint
-
-# Message
-echo Pylint has been installed...
-sleep 3
-
-# Tidy (For HTML)
-sudo apt install tidy
-
-# Message
-echo Tidy has been installed
-sleep 3
-
-# CSSLint (For CSS)
-sudo npm install -g csslint
-
-# Message
-echo CSSLint has been installed...
-sleep 3
-
-# Javac (For Java)
-sudo apt install default-jre
-sudo apt install default-jdk
-
-# Message
-echo Java language and syntax checker have been installed...
-sleep 3
-
 # Vim plugins
 vim -c ':PluginInstall' \
 	-c ":call timer_start(50000, { tid -> execute('PlugInstall')})" \
 	-c ":call timer_start(50000, { tid -> execute('qa')})"
 
-# Message
-echo Vim plugins have been installed...
-sleep 3
-
-# YouCompleteMe Installation
+# YouCompleteMe Manual Installation
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
 
 # Message
-echo YouCompleteMe has been installed...
+echo Vim plugins have been installed...
 sleep 3
 
 # Clear Terminal and Return to Home Directory
