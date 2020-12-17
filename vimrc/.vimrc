@@ -42,9 +42,6 @@ nnoremap <C-Right> :tabnext<CR>
 "--------------Source--------------
 map <F12> :source %<CR>
 
-"------------Pathogen--------------
-execute pathogen#infect()
-
 "---------Vundle Plugins-----------
 set nocompatible
 filetype off
@@ -54,7 +51,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin '907th/vim-auto-save'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'mbbill/undotree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -69,22 +65,6 @@ let g:auto_save = 1
 
 "------------Undotree--------------
 nnoremap <F3> :UndotreeToggle<CR>
-
-"------------Syntastic-------------
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_auto_jump = 0
-let g:syntastic_mode_map = {
-            \"mode": "passive" }
-
-map <F6> :SyntasticToggleMode<CR>
-
-"Syntastic Syntax Checkers
-let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_html_checkers = ['tidy']
-let g:syntastic_css_checkers = ['csslint']
-let g:syntastic_java_checkers = ['javac']
 
 "----------------------------------
 "Vim Plug
@@ -156,7 +136,7 @@ autocmd filetype python nnoremap <F9> :w<CR> :!clear<CR> :!python3 ./%<CR>
 autocmd filetype perl nnoremap <F9> :w<CR> :!clear<CR> :!perl ./%<CR>
 "View MD (Markdown) on WSL
 "Run HTML on Windows
-"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!powershell.exe start chrome %<CR>
+autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!cmd.exe % start chrome %<CR>
 "Run HTML on Linux
 "autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!google-chrome %<CR>
 "Compile/Run C/CPP using Makefile with <F8> and clear console
