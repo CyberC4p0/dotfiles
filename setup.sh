@@ -60,12 +60,16 @@ sleep 3
 # C
 sudo apt install build-essential
 
+# Message
+echo C has been installed...
+sleep 3
+
 # Java
 sudo apt install default-jre
 sudo apt install default-jdk
 
 # Message
-echo C Has been installed...
+echo Java has been installed...
 sleep 3
 
 echo 3 Programming languages have been installed...
