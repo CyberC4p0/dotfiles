@@ -21,6 +21,9 @@ alias gstat='git status'
 # - Git Commit
 alias gcom='git commit'
 
+# - Git Push
+alias gpush='git push'
+
 # -----------Aliases for Changing Directories-------------
 # - Windows Home Directory
 alias home='cd /mnt/c/Users/jmemb'
