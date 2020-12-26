@@ -27,7 +27,7 @@ map <Leader>q :q!<CR>
 map <Leader>qa :qa<CR>
 
 "-----------Split Window-----------
-map <F5> :vnew<CR>
+map <Leader>sw :vnew<CR>
 nnoremap <Leader>h :wincmd h<CR>
 nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
@@ -88,6 +88,9 @@ call plug#end()
 
 "Vim Plug Configurations
 
+"---------YouCompleteMe------------
+set encoding=utf-8
+
 "-------------Vim Rainbow----------
 let g:rainbow_active = 1
 
@@ -103,6 +106,7 @@ map <Leader>ge :GitGutterLineHighlightsEnable<CR>
 map <Leader>gd :GitGutterLineHighlightsDisable<CR> 
 
 "------------Color Scheme----------
+let &t_Co=256
 set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
