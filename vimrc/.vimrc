@@ -10,6 +10,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set splitright
+set title
 let mapleader=","
 
 "-----------Line Numbers-----------
@@ -23,6 +24,7 @@ map <Leader>n :set mouse=<CR>
 
 "--------------Quit----------------
 map <Leader>q :q!<CR>
+map <Leader>qa :qa<CR>
 
 "-----------Split Window-----------
 map <F5> :vnew<CR>
@@ -30,6 +32,9 @@ nnoremap <Leader>h :wincmd h<CR>
 nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
 nnoremap <Leader>l :wincmd l<CR>
+
+"------------Terminal--------------
+map <Leader>t :set mouse=a<CR>:vertical terminal<CR>
 
 "----------Resizing Windows--------
 nnoremap <Leader>+ :vertical resize +5<CR>
@@ -111,11 +116,6 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_solarized_bg='dark'
 
 "-----------Status Line-----------
-"Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 "Vim Fugitive
 set statusline+=%{FugitiveHead()}
 
@@ -136,7 +136,7 @@ autocmd filetype python nnoremap <F9> :w<CR> :!clear<CR> :!python3 ./%<CR>
 autocmd filetype perl nnoremap <F9> :w<CR> :!clear<CR> :!perl ./%<CR>
 "View MD (Markdown) on WSL
 "Run HTML on Windows
-autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!cmd.exe % start chrome %<CR>
+"autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!chrome %<CR>
 "Run HTML on Linux
 "autocmd filetype html nnoremap <F9> :w<CR> :!clear<CR> :!google-chrome %<CR>
 "Compile/Run C/CPP using Makefile with <F8> and clear console

@@ -10,6 +10,17 @@ alias upgrade='sudo apt-get update'
 # - Clear Terminal
 alias cr='clear'
 
+# - Chrome
+alias chrome='/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe'
+
+#----------------------------Git--------------------------
+
+# - Git Status
+alias gstat='git status'
+
+# - Git Commit
+alias gcom='git commit'
+
 # -----------Aliases for Changing Directories-------------
 # - Windows Home Directory
 alias home='cd /mnt/c/Users/jmemb'
