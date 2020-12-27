@@ -126,5 +126,8 @@ sleep 3
 # Clear Terminal and Return to Home Directory
 cd && clear
 
+# Reset Terminal
+reset
+
 # Message
 echo "Your system has been fully setup... Enjoy! :)"
