@@ -8,6 +8,10 @@ sleep 5
 sudo apt-get update
 sudo apt-get upgrade
 
+# Message
+echo System Updated/Upgraded...
+sleep 3
+
 # Install npm
 sudo apt-get install npm
 
@@ -15,9 +19,11 @@ sudo apt-get install npm
 echo npm has been installed...
 sleep 3
 
+# Install Curl
+sudo apt-get install curl
+
 # Message
-echo System Updated/Upgraded...
-sleep 5
+echo Curl has been installed...
 
 # Clear Terminal
 clear
@@ -27,11 +33,12 @@ cd && echo Setting up dotfiles...
 sleep 3
 
 # Removing existing dotfiles
-rm -r .bashrc .vimrc .gitconfig
+rm -r .bashrc .vimrc .gitconfig .bash_aliases
 
 # Symlinking the dotfiles
 
 ln -s ~/dotfiles/bash/.bashrc .bashrc
+ln -s ~/dotfiles/bash/.bash_aliases .bash_aliases
 ln -s ~/dotfiles/vimrc/.vimrc .vimrc
 ln -s ~/dotfiles/git/.gitconfig .gitconfig
 
@@ -83,6 +90,12 @@ clear
 # Message
 echo Setting up Vim...
 sleep 5
+
+# Vim
+sudo apt-get install vim
+
+# Message
+echo Vim has been installed...
 
 # Vim Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
