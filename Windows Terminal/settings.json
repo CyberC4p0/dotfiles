@@ -56,8 +56,8 @@
 						                "hidden": false,
 						                "name": "Ubuntu",
 						                "source": "Windows.Terminal.Wsl",
-										"cursorShape": "filledBox",
-										"fontFace": "Consolas"
+								"cursorShape": "filledBox",
+								"fontFace": "Consolas"
 						            }
 			        ]
 	    },
