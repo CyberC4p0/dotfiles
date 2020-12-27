@@ -50,15 +50,15 @@
 						                "hidden": false,
 						                "name": "Azure Cloud Shell",
 						                "source": "Windows.Terminal.Azure"
-						            },
+									},
 			            {
 						                "guid": "{}",
 						                "hidden": false,
 						                "name": "Ubuntu",
 						                "source": "Windows.Terminal.Wsl",
-								"cursorShape": "filledBox",
-								"fontFace": "Consolas"
-						            }
+										"cursorShape": "filledBox",
+										"fontFace": "Consolas"
+									}
 			        ]
 	    },
 
