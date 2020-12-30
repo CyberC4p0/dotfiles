@@ -33,7 +33,7 @@ cd && echo Setting up dotfiles...
 sleep 3
 
 # Removing existing dotfiles
-rm -r .bashrc .vimrc .gitconfig .bash_aliases
+sudo rm -r .bashrc .vimrc .gitconfig .bash_aliases /etc/inputrc
 
 # Symlinking the dotfiles
 
@@ -41,6 +41,7 @@ ln -s ~/dotfiles/bash/.bashrc .bashrc
 ln -s ~/dotfiles/bash/.bash_aliases .bash_aliases
 ln -s ~/dotfiles/vimrc/.vimrc .vimrc
 ln -s ~/dotfiles/git/.gitconfig .gitconfig
+sudo ln -s ~/dotfiles/bash/inputrc /etc/inputrc
 
 # Message
 echo dotfiles have been set up...

@@ -22,6 +22,12 @@ noremap <F10> :set invnumber<CR>
 map <Leader>m :set mouse=a<CR>
 map <Leader>n :set mouse=<CR>
 
+"------------Reload File-----------
+nnoremap <Leader>e :e!<CR>
+
+"----------Save Read-Only----------
+map <Leader>! :w !sudo tee %<CR>
+
 "--------------Quit----------------
 map <Leader>q :q!<CR>
 map <Leader>qa :qa<CR>
