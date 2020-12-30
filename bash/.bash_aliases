@@ -41,7 +41,7 @@ alias home='cd /mnt/c/Users/jmemb'
 alias explorer='explorer.exe .'
 
 # - Change Directory to Workstation Directory
-alias workstation='cd /mnt/c/Users/jmemb/OneDrive/Programming'
+alias workstation='cd ~/Programming'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'
