@@ -24,6 +24,14 @@ sudo apt-get install curl
 
 # Message
 echo Curl has been installed...
+sleep 3
+
+# Install tree
+sudo apt-get install tree
+
+# Message
+echo Tree has been installed...
+sleep 3
 
 # Clear Terminal
 clear
@@ -35,6 +43,10 @@ sleep 3
 # Removing existing dotfiles
 sudo rm -r .bashrc .vimrc .gitconfig .bash_aliases /etc/inputrc
 
+# Message
+echo dotfiles have been removed...
+sleep 2
+
 # Symlinking the dotfiles
 
 ln -s ~/dotfiles/bash/.bashrc .bashrc
@@ -44,7 +56,7 @@ ln -s ~/dotfiles/git/.gitconfig .gitconfig
 sudo ln -s ~/dotfiles/bash/inputrc /etc/inputrc
 
 # Message
-echo dotfiles have been set up...
+echo dotfiles have been symlinked...
 sleep 5
 
 # Clear Terminal

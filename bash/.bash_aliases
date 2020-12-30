@@ -10,13 +10,22 @@ alias upgrade='sudo apt-get update'
 # - Clear Terminal
 alias cr='clear'
 
+# - Reset
+alias re='reset'
+
 # - Chrome
 alias chrome='/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe'
+
+# - Tree
+alias trea='tree -a'
 
 #----------------------------Git--------------------------
 
 # - Git Status
 alias gstat='git status'
+
+# - Git Add
+alias gadd='git add'
 
 # - Git Commit
 alias gcom='git commit'
