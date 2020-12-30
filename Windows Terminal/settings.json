@@ -57,7 +57,7 @@
 						                "name": "Ubuntu",
 						                "source": "Windows.Terminal.Wsl",
 								"cursorShape": "filledBox",
-								"fontFace": "Consolas"
+								"fontFace": "Consolas",
 					    			"colorScheme": "Tango Dark"
 									}
 			        ]
