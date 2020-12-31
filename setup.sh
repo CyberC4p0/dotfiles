@@ -51,7 +51,7 @@ sleep 2
 
 ln -s ~/dotfiles/bash/.bashrc .bashrc
 ln -s ~/dotfiles/bash/.bash_aliases .bash_aliases
-ln -s ~/dotfiles/vimrc/.vimrc .vimrc
+ln -s ~/dotfiles/vimrc/Workstation/.vimrc .vimrc
 ln -s ~/dotfiles/git/.gitconfig .gitconfig
 sudo ln -s ~/dotfiles/bash/inputrc /etc/inputrc
 
