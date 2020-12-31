@@ -34,10 +34,10 @@ map <Leader>qa :qa<CR>
 
 "-----------Split Window-----------
 map <Leader>sw :vnew<CR>
-nnoremap <Leader>h :wincmd h<CR>
-nnoremap <Leader>j :wincmd j<CR>
-nnoremap <Leader>k :wincmd k<CR>
-nnoremap <Leader>l :wincmd l<CR>
+nnoremap <C-h> :wincmd h<CR>
+nnoremap <C-j> :wincmd j<CR>
+nnoremap <C-k> :wincmd k<CR>
+nnoremap <C-l> :wincmd l<CR>
 
 "------------Terminal--------------
 map <Leader>t :set mouse=a<CR>:vertical terminal<CR>
@@ -112,9 +112,11 @@ map <Leader>ge :GitGutterLineHighlightsEnable<CR>
 map <Leader>gd :GitGutterLineHighlightsDisable<CR> 
 
 "------------Color Scheme----------
+set termguicolors
 let &t_Co=256
 set background=dark
 let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_termcolors=256
 colorscheme gruvbox
 
 "-----------Vim Airline-----------
