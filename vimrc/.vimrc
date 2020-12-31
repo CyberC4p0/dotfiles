@@ -43,8 +43,8 @@ nnoremap <C-l> :wincmd l<CR>
 map <Leader>t :set mouse=a<CR>:vertical terminal<CR>
 
 "----------Resizing Windows--------
-nnoremap <Leader>+ :vertical resize +5<CR>
-nnoremap <Leader>- :vertical resize -5<CR>
+nnoremap <Leader>; :vertical resize +5<CR>
+nnoremap <Leader>' :vertical resize -5<CR>
 
 "----------------Tabs--------------
 nnoremap <C-Left> :tabprevious<CR>
