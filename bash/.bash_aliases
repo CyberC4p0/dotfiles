@@ -16,6 +16,9 @@ alias re='reset'
 # - Chrome
 alias chrome='/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe'
 
+# - Xming
+alias xming='./mnt/c/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Xming/Xming.lnk'
+
 # - Tree
 alias trea='tree -a'
 
@@ -32,6 +35,12 @@ alias gcom='git commit'
 
 # - Git Push
 alias gpush='git push'
+
+# - Git Pull
+alias gpull='git pull'
+
+# - Git Clone
+alias gclo='git clone'
 
 # -----------Aliases for Changing Directories-------------
 # - Windows Home Directory
