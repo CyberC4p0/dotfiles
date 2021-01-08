@@ -48,12 +48,14 @@ echo dotfiles have been removed...
 sleep 2
 
 # Symlinking the dotfiles
-
 ln -s ~/dotfiles/bash/.bashrc .bashrc
 ln -s ~/dotfiles/bash/.bash_aliases .bash_aliases
 ln -s ~/dotfiles/vimrc/Workstation/.vimrc .vimrc
 ln -s ~/dotfiles/git/.gitconfig .gitconfig
 sudo ln -s ~/dotfiles/bash/inputrc /etc/inputrc
+
+# Git Credentials
+git config --global credential.helper store
 
 # Message
 echo dotfiles have been symlinked...
