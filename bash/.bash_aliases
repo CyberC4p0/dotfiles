@@ -54,3 +54,6 @@ alias workstation='cd ~/Programming'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'
+
+# - My Spiritual Notes
+alias jwnotes='cd /mnt/c/Users/jmemb/Google\ Drive/Spiritual Material/Notas'
