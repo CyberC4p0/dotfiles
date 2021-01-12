@@ -5,7 +5,7 @@
 alias update='sudo apt-get update'
 
 # - System Upgrade
-alias upgrade='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
 
 # - Clear Terminal
 alias cr='clear'
@@ -56,4 +56,4 @@ alias workstation='cd ~/Programming'
 alias dotfiles='cd ~/dotfiles'
 
 # - My Spiritual Notes
-alias jwnotes='cd /mnt/c/Users/jmemb/Google\ Drive/Spiritual Material/Notas'
+alias jwnotes='cd /mnt/c/Users/jmemb/Google\ Drive/Spiritual\ Material/Notas'
