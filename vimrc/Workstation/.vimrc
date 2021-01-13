@@ -11,6 +11,7 @@ set undofile
 set incsearch
 set splitright
 set title
+set shellcmdflag=-ic
 let mapleader=","
 
 "-----------Line Numbers-----------
