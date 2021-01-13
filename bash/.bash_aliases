@@ -16,9 +16,6 @@ alias re='reset'
 # - Chrome
 alias chrome='/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe'
 
-# - Xming
-alias xming='./mnt/c/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Xming/Xming.lnk'
-
 # - Tree
 alias trea='tree -a'
 

@@ -29,6 +29,9 @@ sleep 3
 # Install tree
 sudo apt-get install tree
 
+# Cmake
+sudo apt-get install cmake
+
 # Message
 echo Tree has been installed...
 sleep 3
