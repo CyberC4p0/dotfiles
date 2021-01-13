@@ -131,7 +131,7 @@ echo Vundle has been installed...
 sleep 3
 
 # Vim plugins
-vim -c ":PlugInstall" -c ":PluginInstall" -c ":call timer_start(50000, { tid -> execute('qa')})"
+vim -c ":PlugInstall" -c ":PluginInstall" -c ":call timer_start(20000, { tid -> execute('qa')})"
 
 # YouCompleteMe Manual Installation
 cd ~/.vim/plugged/YouCompleteMe
