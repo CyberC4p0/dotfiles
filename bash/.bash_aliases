@@ -8,7 +8,7 @@ alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 
 # - Clear Terminal
-alias cr='clear'
+alias c='clear'
 
 # - Reset
 alias re='reset'
@@ -26,6 +26,9 @@ alias gstat='git status'
 
 # - Git Add
 alias gadd='git add'
+
+# - Git Remove
+alias grm='git rm'
 
 # - Git Commit
 alias gcom='git commit'
@@ -47,7 +50,13 @@ alias home='cd /mnt/c/Users/jmemb'
 alias explorer='explorer.exe .'
 
 # - Change Directory to Workstation Directory
-alias workstation='cd ~/Programming'
+alias Programming='cd ~/Programming'
+
+# - Change Directory to Software Development Directory
+alias SD='cd ~/Programming/Software\ Development'
+
+# - Change Directory to Web Development Directory
+alias WD='cd ~/Programming/Web\ Development'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'
