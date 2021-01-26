@@ -5,8 +5,7 @@
 # System Update/Upgrade
 echo Your system will be setup immediately!
 sleep 5
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
 
 # Message
 echo System Updated/Upgraded...
@@ -62,7 +61,14 @@ git config --global credential.helper store
 
 # Message
 echo dotfiles have been symlinked...
-sleep 5
+sleep 3
+
+# Cloning Code Bases
+git clone https://github.com/jmembreno4194/WD-Code-Base.git
+git clone https://github.com/jmembreno4194/SD-Code-Base.git
+
+# Message
+echo Code Bases have been cloned...
 
 # Clear Terminal
 clear
@@ -141,7 +147,7 @@ cd ~/.vim/plugged/YouCompleteMe
 echo Vim plugins have been installed...
 sleep 3
 
-# Clear Terminal and Return to Home Directory
+# Return to Home Directory and Clear Terminal
 cd && clear
 
 # Reset Terminal

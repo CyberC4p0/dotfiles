@@ -2,10 +2,7 @@
 
 # ------------------Aliases for System--------------------
 # - System Update
-alias update='sudo apt-get update'
-
-# - System Upgrade
-alias upgrade='sudo apt-get upgrade'
+alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 
 # - Clear Terminal
 alias c='clear'
