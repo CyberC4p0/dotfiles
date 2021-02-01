@@ -1,13 +1,9 @@
-**├── .git
-
+```
+├── .git
 ├── Debian
-
 │   ├── bash
-
 │   ├── git
-
 │   ├── setup.sh
-
 │   └── vimrc
 ├── Kali
 │   ├── bash
@@ -38,3 +34,4 @@
 │           └── README.md
 └── Windows Terminal
     └── settings.json**
+```
