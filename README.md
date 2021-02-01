@@ -1,8 +1,13 @@
 **├── .git
+
 ├── Debian
+
 │   ├── bash
+
 │   ├── git
+
 │   ├── setup.sh
+
 │   └── vimrc
 ├── Kali
 │   ├── bash
