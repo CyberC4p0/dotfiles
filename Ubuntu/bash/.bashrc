@@ -5,6 +5,9 @@
 # WSL- Change to home directory on windows terminal
 cd ~
 
+# Update my dotfiles repo
+cd ~/dotfiles && git pull >/dev/null && cd ~
+
 # Blinking Block Cursor
 echo -ne '\e[1 q'
 
