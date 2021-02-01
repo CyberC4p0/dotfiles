@@ -6,7 +6,7 @@
 cd ~
 
 # Update my dotfiles repo
-cd ~/dotfiles && git pull >/dev/null && cd ~
+cd ~/dotfiles && git pull --quiet && cd ~
 
 # Blinking Block Cursor
 echo -ne '\e[1 q'
