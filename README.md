@@ -1,5 +1,4 @@
 ```
-├── .git
 ├── Debian
 │   ├── bash
 │   ├── git
@@ -15,6 +14,7 @@
 │   ├── git
 │   ├── setup.sh
 │   └── vimrc
+├── README.md
 ├── Ubuntu
 │   ├── bash
 │   │   ├── .bash_aliases
@@ -33,5 +33,5 @@
 │           ├── .vimrc
 │           └── README.md
 └── Windows Terminal
-    └── settings.json**
+    └── settings.json
 ```
