@@ -50,11 +50,11 @@ echo dotfiles have been removed...
 sleep 2
 
 # Symlinking the dotfiles
-ln -s ~/dotfiles/bash/.bashrc .bashrc
-ln -s ~/dotfiles/bash/.bash_aliases .bash_aliases
-ln -s ~/dotfiles/vimrc/Workstation/.vimrc .vimrc
-ln -s ~/dotfiles/git/.gitconfig .gitconfig
-sudo ln -s ~/dotfiles/bash/inputrc /etc/inputrc
+ln -s ~/dotfiles/Ubuntu/bash/.bashrc .bashrc
+ln -s ~/dotfiles/Ubuntu/bash/.bash_aliases .bash_aliases
+ln -s ~/dotfiles/Ubuntu/vimrc/Workstation/.vimrc .vimrc
+ln -s ~/dotfiles/Ubuntu/git/.gitconfig .gitconfig
+sudo ln -s ~/Ubuntu/dotfiles/bash/inputrc /etc/inputrc
 
 # Git Credentials
 git config --global credential.helper store
@@ -62,10 +62,6 @@ git config --global credential.helper store
 # Message
 echo dotfiles have been symlinked...
 sleep 3
-
-# Cloning Code Bases
-git clone https://github.com/jmembreno4194/WD-Code-Base.git
-git clone https://github.com/jmembreno4194/SD-Code-Base.git
 
 # Message
 echo Code Bases have been cloned...

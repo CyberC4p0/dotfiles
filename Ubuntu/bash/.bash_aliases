@@ -49,11 +49,8 @@ alias explorer='explorer.exe .'
 # - Change Directory to Workstation Directory
 alias Programming='cd ~/Programming'
 
-# - Change Directory to Software Development Directory
-alias SD='cd ~/Programming/Software\ Development'
-
-# - Change Directory to Web Development Directory
-alias WD='cd ~/Programming/Web\ Development'
+# - Change Directory to Programming Directory
+alias prog='cd /mnt/f/Programming/'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'

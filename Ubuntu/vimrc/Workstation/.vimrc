@@ -11,6 +11,8 @@ set undofile
 set incsearch
 set splitright
 set title
+set noerrorbells
+set vb t_vb=
 "set shellcmdflag=-ic
 let mapleader=","
 
