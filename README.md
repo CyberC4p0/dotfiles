@@ -27,11 +27,12 @@
 │       ├── Portable
 │       │   ├── .vimrc
 │       │   └── README.md
-│       ├── Windows Vim
-│       │   └── .vimrc
 │       └── Workstation
 │           ├── .vimrc
 │           └── README.md
-└── Windows Terminal
-    └── settings.json
+└── Windows
+    ├── Windows Terminal
+    │   └── settings.json
+    └── vimrc
+        └── .vimrc
 ```
