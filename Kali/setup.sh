@@ -17,7 +17,7 @@ sudo apt install kali-desktop-xfce -y
 sudo apt-get install dbus-x11
 
 # xrdp
-sydo apt install xrdp -y
+sudo apt install xrdp -y
 
 # Tree
 sudo apt install tree
