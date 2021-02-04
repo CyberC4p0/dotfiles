@@ -1,8 +1,9 @@
-# Aliases for WSL
+# Aliases for WSL Kali Linux
 
 # ------------------Aliases for System--------------------
-#lias grm='git rm' - System Update
-alias upgrade='sudo apt-get update && sudo apt-get upgrade'
+
+# - System Update
+alias upgrade='sudo apt update && sudo apt upgrade -y'
 
 # - Clear Terminal
 alias c='clear'
@@ -10,11 +11,11 @@ alias c='clear'
 # - Reset
 alias re='reset'
 
-# - Chrome
-alias chrome='/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe'
-
 # - Tree
 alias trea='tree -a'
+
+# - xrdp
+sudo service xrdp start
 
 #----------------------------Git--------------------------
 
@@ -22,7 +23,7 @@ alias trea='tree -a'
 alias gstat='git status'
 
 # - Git Add
-alias gadd='git add'
+alias gadd='git add -A'
 
 # - Git Remove
 alias grm='git rm'
@@ -40,6 +41,7 @@ alias gpull='git pull'
 alias gclo='git clone'
 
 # -----------Aliases for Changing Directories-------------
+
 # - Windows Home Directory
 alias home='cd /mnt/c/Users/jmemb'
 
@@ -51,6 +53,3 @@ alias prog='cd /mnt/f/Programming/'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'
-
-# - My Spiritual Notes
-alias jwnotes='cd /mnt/c/Users/jmemb/Google\ Drive/Spiritual\ Material/Notas'

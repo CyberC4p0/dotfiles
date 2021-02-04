@@ -63,9 +63,6 @@ git config --global credential.helper store
 echo dotfiles have been symlinked...
 sleep 3
 
-# Message
-echo Code Bases have been cloned...
-
 # Clear Terminal
 clear
 
