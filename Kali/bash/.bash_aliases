@@ -15,7 +15,7 @@ alias re='reset'
 alias trea='tree -a'
 
 # - xrdp
-sudo service xrdp start
+alias guistr='sudo service xrdp start'
 
 #----------------------------Git--------------------------
 
