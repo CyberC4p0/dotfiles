@@ -6,9 +6,16 @@
 │   └── vimrc
 ├── Kali
 │   ├── bash
+│   │   ├── .bash_aliases
+│   │   └── .bashrc
+│   ├── f-slash
+│   │   └── etc
+│   │       └── inputrc
 │   ├── git
+│   │   └── .gitconfig
 │   ├── setup.sh
 │   └── vimrc
+│       └── .vimrc
 ├── Parrot
 │   ├── bash
 │   ├── git
@@ -18,8 +25,10 @@
 ├── Ubuntu
 │   ├── bash
 │   │   ├── .bash_aliases
-│   │   ├── .bashrc
-│   │   └── inputrc
+│   │   └── .bashrc
+│   ├── f-slash
+│   │   └── etc
+│   │       └── inputrc
 │   ├── git
 │   │   └── .gitconfig
 │   ├── setup.sh
