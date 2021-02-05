@@ -2,6 +2,18 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# WSL- Change to home directory on windows terminal
+cd ~
+
+# Update my dotfiles repo
+cd ~/dotfiles && git pull --quiet && cd ~
+
+# Blinking Block Cursor
+echo -ne '\e[1 q'
+
+# Automatically use display 0
+export DISPLAY=:0.0
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
