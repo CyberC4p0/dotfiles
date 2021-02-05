@@ -4,4 +4,4 @@
 [core]
         editor = vim
 [credential]
-        helper = store
+	helper = store

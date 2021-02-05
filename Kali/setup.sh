@@ -70,10 +70,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Vim Plugins
 vim -c ":PlugInstall" -c ":PluginInstall" -c ":call timer_start(20000, { tid -> execute('qa')})"
 
-# YouCompleteMe Manual Installation
-cd ~/.vim/plugged/YouCompleteMe
-./install.py
-
 echo Vim plugins have been installed...
 sleep 3
 

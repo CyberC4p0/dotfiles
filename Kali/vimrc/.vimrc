@@ -85,7 +85,6 @@ nnoremap <F3> :UndotreeToggle<CR>
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
-Plug 'ycm-core/YouCompleteMe'
 Plug 'morhetz/gruvbox'
 Plug 'tmsvg/pear-tree'
 Plug 'frazrepo/vim-rainbow'
