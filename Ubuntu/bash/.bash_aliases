@@ -22,7 +22,7 @@ alias trea='tree -a'
 alias gstat='git status'
 
 # - Git Add
-alias gadd='git add'
+alias gadd='git add -A'
 
 # - Git Remove
 alias grm='git rm'

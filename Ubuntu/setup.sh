@@ -48,7 +48,7 @@ ln -s ~/dotfiles/Ubuntu/bash/.bashrc .bashrc
 ln -s ~/dotfiles/Ubuntu/bash/.bash_aliases .bash_aliases
 ln -s ~/dotfiles/Ubuntu/vimrc/Workstation/.vimrc .vimrc
 ln -s ~/dotfiles/Ubuntu/git/.gitconfig .gitconfig
-sudo ln -s ~/dotfiles/Ubuntu/f-slash/inputrc /etc/inputrc
+sudo ln -s ~/dotfiles/Ubuntu/f-slash/etc/inputrc /etc/inputrc
 
 # Git Credentials
 git config --global credential.helper store
