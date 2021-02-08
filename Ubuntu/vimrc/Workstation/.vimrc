@@ -13,17 +13,31 @@ set splitright
 set title
 set noerrorbells
 set vb t_vb=
-"set shellcmdflag=-ic
+set shellcmdflag=-ic
 let mapleader=","
 
-"-----------Line Numbers-----------
+"----------SignColumn/Numbers------------
 set invnumber
-inoremap <F10> <C-O>:set invnumber<CR>
-noremap <F10> :set invnumber<CR>
+function! GitGutterSignsColumnToggle()
+	if &signcolumn == "yes"
+		set signcolumn=no
+		set nonumber
+	else
+		set signcolumn=yes
+		set number
+	endif
+endfunction
+map <F5> :call GitGutterSignsColumnToggle()<CR>
 
 "-----------Mouse Scrolling--------
-map <Leader>m :set mouse=a<CR>
-map <Leader>n :set mouse=<CR>
+function! Mouse_Scrolling_Toggle()
+	if &mouse == ""
+		set mouse=a
+	else
+		set mouse=
+	endif
+endfunction
+map <Leader>m :call Mouse_Scrolling_Toggle()<CR>
 
 "------------Reload File-----------
 nnoremap <Leader>e :e!<CR>
