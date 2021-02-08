@@ -15,6 +15,7 @@ set noerrorbells
 set vb t_vb=
 set shellcmdflag=-ic
 set pastetoggle=<F4>
+set encoding=utf-8
 let mapleader=","
 
 "----------SignColumn/Numbers------------
@@ -119,9 +120,6 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 "Vim Plug Configurations
-
-"---------YouCompleteMe------------
-set encoding=utf-8
 
 "-------------Vim Rainbow----------
 let g:rainbow_active = 1
