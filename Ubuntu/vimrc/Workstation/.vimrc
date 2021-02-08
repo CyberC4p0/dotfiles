@@ -13,7 +13,7 @@ set splitright
 set title
 set noerrorbells
 set vb t_vb=
-set shellcmdflag=-ic
+"set shellcmdflag=-ic
 set pastetoggle=<F4>
 set encoding=utf-8
 let mapleader=","
