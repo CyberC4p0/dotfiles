@@ -18,23 +18,6 @@ set pastetoggle=<F4>
 set encoding=utf-8
 let mapleader=","
 
-"----------SignColumn/Numbers------------
-set invnumber
-let s:gitgutter_signs_column_toggle = 1
-if s:gitgutter_signs_column_toggle == 1
-	function! GitGutterSignsColumnToggle()
-    	if &signcolumn == "yes"
-        	set signcolumn=no
-        	set nonumber
-    	else
-        	set signcolumn=yes
-        	set number
-    	endif
-	endfunction
-	command! GitGutterSignsColumnToggle execute "call GitGutterSignsColumnToggle()"
-endif	
-map <F5> :GitGutterSignsColumnToggle<CR>
-
 "-----------Mouse Scrolling--------
 let s:mouse_scrolling_toggle = 1
 if s:mouse_scrolling_toggle == 1
@@ -132,8 +115,23 @@ nnoremap <Leader>g :GV<CR>
 
 "-----------Git Gutter-------------
 set signcolumn=yes
+set invnumber
 map <Leader>ge :GitGutterLineHighlightsEnable<CR>
 map <Leader>gd :GitGutterLineHighlightsDisable<CR> 
+let s:gitgutter_signs_column_toggle = 1
+if s:gitgutter_signs_column_toggle == 1
+	function! GitGutterSignsColumnToggle()
+    	if &signcolumn == "yes"
+        	set signcolumn=no
+        	set nonumber
+    	else
+        	set signcolumn=yes
+        	set number
+    	endif
+	endfunction
+	command! GitGutterSignsColumnToggle execute "call GitGutterSignsColumnToggle()"
+endif	
+map <F5> :GitGutterSignsColumnToggle<CR>
 
 "------------Color Scheme----------
 set termguicolors
