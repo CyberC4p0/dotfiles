@@ -14,30 +14,39 @@ set title
 set noerrorbells
 set vb t_vb=
 set shellcmdflag=-ic
+set pastetoggle=<F4>
 let mapleader=","
 
 "----------SignColumn/Numbers------------
 set invnumber
-function! GitGutterSignsColumnToggle()
-	if &signcolumn == "yes"
-		set signcolumn=no
-		set nonumber
-	else
-		set signcolumn=yes
-		set number
-	endif
-endfunction
-map <F5> :call GitGutterSignsColumnToggle()<CR>
+let s:gitgutter_signs_column_toggle = 1
+if s:gitgutter_signs_column_toggle == 1
+	function! GitGutterSignsColumnToggle()
+    	if &signcolumn == "yes"
+        	set signcolumn=no
+        	set nonumber
+    	else
+        	set signcolumn=yes
+        	set number
+    	endif
+	endfunction
+	command! GitGutterSignsColumnToggle execute "call GitGutterSignsColumnToggle()"
+endif	
+map <F5> :GitGutterSignsColumnToggle<CR>
 
 "-----------Mouse Scrolling--------
-function! Mouse_Scrolling_Toggle()
-	if &mouse == ""
-		set mouse=a
-	else
-		set mouse=
-	endif
-endfunction
-map <Leader>m :call Mouse_Scrolling_Toggle()<CR>
+let s:mouse_scrolling_toggle = 1
+if s:mouse_scrolling_toggle == 1
+	function! Mouse_Scrolling_Toggle()
+		if &mouse == ""
+			set mouse=a
+		else
+			set mouse=
+		endif
+	endfunction
+	command! MouseScrollingToggle execute "call Mouse_Scrolling_Toggle()"
+endif
+map <Leader>m :MouseScrollingToggle<CR>
 
 "------------Reload File-----------
 nnoremap <Leader>e :e!<CR>
