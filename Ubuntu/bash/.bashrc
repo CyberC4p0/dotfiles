@@ -2,11 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# Update my dotfiles repo
-cd ~/dotfiles && git pull --quiet && cd ~
-
 # Blinking Block Cursor
 echo -ne '\e[1 q'
+
+# Update my dotfiles repo
+cd ~/dotfiles && git pull --quiet && cd ~
 
 # Automatically use display 0
 export DISPLAY=:0.0
