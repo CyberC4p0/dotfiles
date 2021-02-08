@@ -2,9 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# WSL- Change to home directory on windows terminal
-cd ~
-
 # Update my dotfiles repo
 cd ~/dotfiles && git pull --quiet && cd ~
 
