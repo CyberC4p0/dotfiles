@@ -62,12 +62,6 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{}", // guid for Kali Linux
-                "hidden": false,
-                "name": "kali-linux",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
                 "guid": "{}", // guid for Debian
                 "hidden": false,
                 "name": "Debian",
