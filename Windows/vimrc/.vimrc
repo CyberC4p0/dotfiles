@@ -10,23 +10,19 @@ set undofile
 set incsearch
 set splitright
 set title
-set shell=Ubuntu
 set noerrorbells
-set vb t_vb=
+set novisualbell
+set belloff=all
+set backspace=indent,eol,start
+set encoding=utf-8
+set number
+set shell=cmd
+set guicursor=a:block-Cursor
 let mapleader=","
+filetype plugin indent on
 
-"-----------Line Numbers-----------
-set invnumber
-inoremap <F10> <C-O>:set invnumber<CR>
-noremap <F10> :set invnumber<CR>
-
-"-----------Mouse Scrolling--------
-map <Leader>m :set mouse=a<CR>
-map <Leader>n :set mouse=<CR>
-
-"------------Saving/Reload-----------
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>e :e!<CR>
+"----------Working Directory-------
+cd F:\Programming\Software-Development
 
 "--------------Quit----------------
 map <Leader>q :q!<CR>
@@ -40,14 +36,11 @@ nnoremap <C-k> :wincmd k<CR>
 nnoremap <C-l> :wincmd l<CR>
 
 "------------Terminal--------------
-map <Leader>t :set mouse=a<CR>:vertical terminal<CR>
-
-"------------Explorer--------------
-map <F2> :Vex 15<CR>
+map <Leader>t :vertical terminal<CR>
 
 "----------Resizing Windows--------
-nnoremap <Leader>' :vertical resize +5<CR>
-nnoremap <Leader>; :vertical resize -5<CR>
+nnoremap <Leader>; :vertical resize +5<CR>
+nnoremap <Leader>' :vertical resize -5<CR>
 
 "----------------Tabs--------------
 nnoremap <C-Left> :tabprevious<CR>
@@ -56,9 +49,67 @@ nnoremap <C-Right> :tabnext<CR>
 "--------------Source--------------
 map <F12> :source %<CR>
 
-"---------Encoding------------
-set encoding=utf-8
+"------------Color Scheme----------
+set background=dark
+
+"-------------Vim Plug-------------
+call plug#begin('C:\Users\jmemb\vimfiles\plugged')
+
+Plug 'tmsvg/pear-tree'
+Plug 'frazrepo/vim-rainbow'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
+Plug 'mbbill/undotree'
+Plug 'morhetz/gruvbox'
+Plug '907th/vim-auto-save'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
+
+"-------------Vim Rainbow----------
+let g:rainbow_active = 1
+
+"-----------Vim Fugitive-----------
+set statusline+=%{FugitiveHead()}
+
+"-----------Git Commit-------------
+nnoremap <Leader>g :GV<CR>
+
+"-----------Git Gutter-------------
+set signcolumn=auto
+map <F4> :GitGutterToggle<CR>
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
+
+"------------NERDTree--------------
+map <F2> :NERDTreeToggle<CR>
+
+"------------Undotree--------------
+nnoremap <F3> :UndotreeToggle<CR>
 
 "------------Color Scheme----------
 set background=dark
-colorscheme desert
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_termcolors=256
+colorscheme gruvbox
+
+"-----------Vim Airline-----------
+let g:airline_theme='gruvbox'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_solarized_bg='dark'
+
+"------------Autosave--------------
+let g:auto_save = 1
+
+"----------------------------------
+"Compile/Run languages with <F9> and clear console
+autocmd filetype c nnoremap <F9> :!gcc % -o %< && %<<CR>
