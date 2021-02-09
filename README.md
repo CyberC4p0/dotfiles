@@ -1,9 +1,6 @@
 ```
 ├── Debian
-│   ├── bash
-│   ├── git
-│   ├── setup.sh
-│   └── vimrc
+│   └── setup.sh
 ├── Kali
 │   ├── bash
 │   │   ├── .bash_aliases
@@ -17,10 +14,7 @@
 │   └── vimrc
 │       └── .vimrc
 ├── Parrot
-│   ├── bash
-│   ├── git
-│   ├── setup.sh
-│   └── vimrc
+│   └── setup.sh
 ├── README.md
 ├── Ubuntu
 │   ├── bash
