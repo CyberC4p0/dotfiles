@@ -39,6 +39,12 @@ alias gpull='git pull'
 # - Git Clone
 alias gclo='git clone'
 
+# - Git Log
+alias glog='git log'
+
+# - Git Log --oneline
+alias glog1-='git log --oneline'
+
 # -----------Aliases for Changing Directories-------------
 # - Windows Home Directory
 alias home='cd /mnt/c/Users/jmemb'
