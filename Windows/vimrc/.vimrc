@@ -28,6 +28,9 @@ cd F:\Programming\Software-Development
 map <Leader>q :q!<CR>
 map <Leader>qa :qa<CR>
 
+"-------------Autocomplete---------
+imap <Leader>c <C-n>
+
 "-----------Split Window-----------
 map <Leader>sw :vnew<CR>
 nnoremap <C-h> :wincmd h<CR>
@@ -36,7 +39,7 @@ nnoremap <C-k> :wincmd k<CR>
 nnoremap <C-l> :wincmd l<CR>
 
 "------------Terminal--------------
-map <Leader>t :vertical terminal<CR>
+map <Leader>t :vertical terminal Ubuntu<CR>
 
 "----------Resizing Windows--------
 nnoremap <Leader>; :vertical resize +5<CR>
@@ -112,4 +115,4 @@ let g:auto_save = 1
 
 "----------------------------------
 "Compile/Run languages with <F9> and clear console
-autocmd filetype c nnoremap <F9> :!gcc % -o %< && %<<CR>
+autocmd filetype c nnoremap <silent> <F9> :!gcc % -o %< && %<<CR><CR>
