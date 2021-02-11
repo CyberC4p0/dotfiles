@@ -33,7 +33,7 @@ if s:gitgutter_signs_column_toggle == 1
             set number
         endif
     endfunction
-    command! GitGutterSignsColumnToggle execute "call GitGutterSignsColumnToggle
+    command! GitGutterSignsColumnToggle execute "call GitGutterSignsColumnToggle()"
 endif
 map <F5> :GitGutterSignsColumnToggle<CR>
 

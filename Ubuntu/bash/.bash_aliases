@@ -16,35 +16,6 @@ alias chrome='/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe'
 # - Tree
 alias trea='tree -a'
 
-#----------------------------Git--------------------------
-
-# - Git Status
-alias gstat='git status'
-
-# - Git Add
-alias gadd='git add -A'
-
-# - Git Remove
-alias grm='git rm'
-
-# - Git Commit
-alias gcom='git commit'
-
-# - Git Push
-alias gpush='git push'
-
-# - Git Pull
-alias gpull='git pull'
-
-# - Git Clone
-alias gclo='git clone'
-
-# - Git Log
-alias glog='git log'
-
-# - Git Log --oneline
-alias glog1-='git log --oneline'
-
 # -----------Aliases for Changing Directories-------------
 # - Windows Home Directory
 alias home='cd /mnt/c/Users/jmemb'
@@ -57,6 +28,9 @@ alias prog='cd /mnt/f/Programming/'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'
+
+# - Change Directory to Vimrc Extensions Directory
+alias vplug='cd ~/.vim/plugged/vimrc-extensions'
 
 # - My Spiritual Notes
 alias jwnotes='cd /mnt/c/Users/jmemb/Google\ Drive/Spiritual\ Material/Notas'
