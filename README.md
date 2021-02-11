@@ -32,6 +32,8 @@
 │       │   └── README.md
 │       └── Workstation
 │           ├── .vimrc
+│           ├── code-snippets
+│           │   └── main.c
 │           └── vimrc-extensions
 │               ├── built-in_remaps.vim
 │               ├── compile.vim
