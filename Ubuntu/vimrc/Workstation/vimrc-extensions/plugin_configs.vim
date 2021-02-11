@@ -56,3 +56,6 @@ let g:airline_solarized_bg='dark'
 "-----------Vim Fugitive-----------
 "Vim Fugitive
 set statusline+=%{FugitiveHead()}
+
+"------------Transparency----------
+highlight Normal guibg=NONE ctermbg=NONE
