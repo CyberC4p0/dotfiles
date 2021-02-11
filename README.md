@@ -32,7 +32,11 @@
 │       │   └── README.md
 │       └── Workstation
 │           ├── .vimrc
-│           └── README.md
+│           └── vimrc-extensions
+│               ├── built-in_remaps.vim
+│               ├── compile.vim
+│               ├── plugin_configs.vim
+│               └── set.vim
 └── Windows
     ├── Windows Terminal
     │   └── settings.json
