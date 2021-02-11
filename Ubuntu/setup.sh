@@ -47,7 +47,9 @@ sleep 2
 ln -s ~/dotfiles/Ubuntu/bash/.bashrc .bashrc
 ln -s ~/dotfiles/Ubuntu/bash/.bash_aliases .bash_aliases
 ln -s ~/dotfiles/Ubuntu/vimrc/Workstation/.vimrc .vimrc
+ln -s ~/dotfiles/Ubuntu/vimrc/Workstation/vimrc-extensions ~/.vim/plugged/vimrc-extension
 ln -s ~/dotfiles/Ubuntu/git/.gitconfig .gitconfig
+
 sudo ln -s ~/dotfiles/Ubuntu/f-slash/etc/inputrc /etc/inputrc
 
 # Git Credentials
@@ -60,25 +62,10 @@ clear
 
 #---------------------Programming Languages------------------
 
-# Message
-echo Setting up 3 programming languages...
-sleep 5
-
-# Python
-sudo apt-get install python3
-sudo apt install python3-pip
-pip install numpy
-echo Python has been installed...
-sleep 3
-
 # C
 sudo apt install build-essential
 echo C has been installed...
 sleep 3
-
-echo 2 Programming languages have been installed...
-sleep 5
-clear
 
 #-------------------------Vim Setup--------------------------
 
@@ -98,17 +85,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 echo Vim Plug has been installed...
 sleep 3
 
-# Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-echo Vundle has been installed...
-sleep 3
-
 # Vim plugins
-vim -c ":PlugInstall" -c ":PluginInstall" -c ":call timer_start(20000, { tid -> execute('qa')})"
-
-# YouCompleteMe Manual Installation
-cd ~/.vim/plugged/YouCompleteMe
-./install.py
+vim -c ":PlugInstall" -c ":call timer_start(10000, { tid -> execute('qa')})"
 
 # Message
 echo Vim plugins have been installed...
