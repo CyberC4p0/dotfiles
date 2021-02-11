@@ -24,7 +24,10 @@ alias home='cd /mnt/c/Users/jmemb'
 alias explorer='explorer.exe .'
 
 # - Change Directory to Programming Directory
-alias prog='cd /mnt/f/Programming/'
+alias prog='cd /mnt/f/Programming/Software-Development/'
+
+# - Change Directory to Github Repos Directory
+alias progg='cd /mnt/f/Programming/Software-Development/Github-Repos'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'
