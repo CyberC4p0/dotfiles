@@ -1,15 +1,14 @@
-#!/bin/bash
-
 #---------------------------System---------------------------
 
 # System Update/Upgrade
 echo Your system will be setup immediately!
 sleep 5
 sudo apt-get update && sudo apt-get upgrade -y
-
-# Message
 echo System Updated/Upgraded...
 sleep 3
+
+# Neofetch
+sudo apt-get install
 
 # Install npm
 sudo apt-get install npm
@@ -38,8 +37,6 @@ sleep 3
 
 # Removing existing dotfiles
 sudo rm -r .bashrc .vimrc .gitconfig .bash_aliases /etc/inputrc
-
-# Message
 echo dotfiles have been removed...
 sleep 2
 
@@ -49,13 +46,7 @@ ln -s ~/dotfiles/Ubuntu/bash/.bash_aliases .bash_aliases
 ln -s ~/dotfiles/Ubuntu/vimrc/Workstation/.vimrc .vimrc
 ln -s ~/dotfiles/Ubuntu/vimrc/Workstation/vimrc-extensions ~/.vim/plugged/vimrc-extension
 ln -s ~/dotfiles/Ubuntu/git/.gitconfig .gitconfig
-
 sudo ln -s ~/dotfiles/Ubuntu/f-slash/etc/inputrc /etc/inputrc
-
-# Git Credentials
-git config --global credential.helper store
-
-# Message
 echo dotfiles have been symlinked...
 sleep 3
 clear
@@ -66,11 +57,12 @@ clear
 sudo apt install build-essential
 echo C has been installed...
 sleep 3
+clear
 
 #-------------------------Vim Setup--------------------------
 
 # Message
-echo Setting up Vim...
+echo Setting up vim...
 sleep 5
 
 # Vim
@@ -86,9 +78,7 @@ echo Vim Plug has been installed...
 sleep 3
 
 # Vim plugins
-vim -c ":PlugInstall" -c ":call timer_start(10000, { tid -> execute('qa')})"
-
-# Message
+vim -c ":PlugInstall" -c ":call timer_start(15000, { tid -> execute('qa')})"
 echo Vim plugins have been installed...
 sleep 3
 
@@ -96,4 +86,5 @@ sleep 3
 cd && reset
 
 # Finish Line
+neofetch --ascii_distro ubuntu
 echo "Your system has been fully setup... Enjoy! :)"

@@ -8,6 +8,9 @@ echo -ne '\e[1 q'
 # Update my dotfiles repo
 cd ~/dotfiles && git pull --quiet && cd ~
 
+# Neofetch
+neofetch --ascii_distro ubuntu
+
 # Automatically use display 0
 export DISPLAY=:0.0
 
