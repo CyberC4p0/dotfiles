@@ -22,7 +22,7 @@ set pastetoggle=<F4>
 set encoding=utf-8
 set scrolloff=8
 set noshowmode
-set cmdheight=2
+set cmdheight=1
 set showcmd
 set path+=**
 set wildmenu
