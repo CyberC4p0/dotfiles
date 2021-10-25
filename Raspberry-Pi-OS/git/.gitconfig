@@ -1,0 +1,17 @@
+[user]
+	name = jmembreno4194
+	email = jmembreno90217@gmail.com
+[core]
+	editor = vim
+[credential]
+	helper = store
+[alias]
+	st = status
+	a = add -A
+	r = rm -A
+	com = commit
+	pl = pull
+	c = clone
+	l = log
+	l1 = log --oneline
+	p = push
