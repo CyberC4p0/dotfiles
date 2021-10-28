@@ -7,6 +7,9 @@ sudo apt-get update && sudo apt-get upgrade -y
 echo System Updated/Upgraded...
 sleep 3
 
+# Arc Dark Theme Package
+sudo apt install arc-theme papirus-icon-theme breeze-cursor-theme
+
 # Neofetch
 sudo apt-get install neofetch
 echo Neofetch has been installed...
