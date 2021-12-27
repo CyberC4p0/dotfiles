@@ -20,23 +20,7 @@ function! GitStatus()
 endfunction
 set statusline+=%{GitStatus()}
 
-let s:gitgutter_signs_column_toggle = 1
-if s:gitgutter_signs_column_toggle == 1
-    function! GitGutterSignsColumnToggle()
-        if &signcolumn == "yes"
-            set signcolumn=no
-            set nonumber
-            set norelativenumber
-        else
-            set signcolumn=yes
-            set relativenumber
-            set number
-        endif
-    endfunction
-    command! GitGutterSignsColumnToggle execute "call GitGutterSignsColumnToggle()"
-endif
-map <F5> :GitGutterSignsColumnToggle<CR>
-
+set signcolumn=no
 "--------------Gruvbox------------
 let &t_Co=256
 set background=dark

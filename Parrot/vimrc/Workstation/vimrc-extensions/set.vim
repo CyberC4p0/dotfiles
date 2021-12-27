@@ -26,7 +26,6 @@ set cmdheight=1
 set showcmd
 set path+=**
 set wildmenu
-set signcolumn=yes
 set background=dark
 set nocompatible
 let mapleader=","
