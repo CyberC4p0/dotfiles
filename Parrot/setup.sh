@@ -7,6 +7,9 @@ sudo apt update && sudo apt full-upgrade -y
 echo System Updated/Upgraded...
 sleep 3
 
+# VMware Tools: Only for Parrot OS in a virtual machine
+sudp apt install open-vm-tools-desktop
+
 # Neofetch
 sudo apt install neofetch
 echo Neofetch has been installed...
