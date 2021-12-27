@@ -2,7 +2,7 @@
 
 # ------------------Aliases for System--------------------
 # - System Update
-alias upgrade='sudo apt-get update && sudo apt-get upgrade'
+alias upgrade='sudo apt update && sudo apt full-upgrade -y'
 
 # - Clear Terminal
 alias c='clear'
@@ -12,6 +12,9 @@ alias re='reset'
 
 # - Tree
 alias trea='tree -a'
+
+# - List of hidden files
+alias lsa='ls -a'
 
 # -----------Aliases for Changing Directories-------------
 

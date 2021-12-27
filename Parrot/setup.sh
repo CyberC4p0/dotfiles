@@ -3,32 +3,32 @@
 # System Update/Upgrade
 echo Your system will be setup immediately!
 sleep 5
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt update && sudo apt full-upgrade -y
 echo System Updated/Upgraded...
 sleep 3
 
 # Neofetch
-sudo apt-get install neofetch
+sudo apt install neofetch
 echo Neofetch has been installed...
 sleep 3
 
 # Install npm
-sudo apt-get install npm
+sudo apt install npm
 echo npm has been installed...
 sleep 3
 
 # Install Curl
-sudo apt-get install curl
+sudo apt install curl
 echo Curl has been installed...
 sleep 3
 
 # Install tree
-sudo apt-get install tree
+sudo apt install tree
 echo Tree has been installed...
 sleep 3
 
 # Cmake
-sudo apt-get install cmake
+sudo apt install cmake
 echo Cmake has been installed...
 sleep 3
 clear
@@ -43,10 +43,11 @@ echo dotfiles have been removed...
 sleep 2
 
 # Symlinking the dotfiles
-ln -s ~/dotfiles/Parrot/bash/.bash_aliases .bash_aliases
-ln -s ~/dotfiles/Parrot/vimrc/Workstation/.vimrc .vimrc
-ln -s ~/dotfiles/Parrot/vimrc/Workstation/vimrc-extensions ~/.vim/plugged/vimrc-extension
-ln -s ~/dotfiles/Parrot/git/.gitconfig .gitconfig
+ln -s ~/dotfiles/Parrot/bash/.bashrc ~/.bashrc
+ln -s ~/dotfiles/Parrot/bash/.bash_aliases ~/.bash_aliases
+ln -s ~/dotfiles/Parrot/vimrc/Workstation/.vimrc ~/.vimrc
+ln -s ~/dotfiles/Parrot/vimrc/Workstation/vimrc-extensions ~/.vim/plugged/vimrc-extensions
+ln -s ~/dotfiles/Parrot/git/.gitconfig ~/.gitconfig
 echo dotfiles have been symlinked...
 sleep 3
 clear
@@ -65,8 +66,12 @@ clear
 echo Setting up vim...
 sleep 5
 
+# Remove Neovim
+sudo rm -r /usr/bin/vim /usr/bin/nvim
+echo Removed existing installation of neovim...
+
 # Vim
-sudo apt-get install vim
+sudo apt install vim
 echo Vim has been installed...
 sleep 3
 

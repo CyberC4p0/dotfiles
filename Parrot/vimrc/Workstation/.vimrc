@@ -1,8 +1,8 @@
 "-------External Vim Scripts-----
 filetype plugin on
 
-source ~/.vim/plugged/vimrc-extensions/set.vim
-source ~/.vim/plugged/vimrc-extensions/built-in_remaps.vim
+source ~/.vim/plugged/vimrc-extension/set.vim
+source ~/.vim/plugged/vimrc-extension/built-in_remaps.vim
 
 "-----------Vim Plug-------------
 call plug#begin('~/.vim/plugged')
@@ -22,7 +22,7 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 "---------Vim Plug Config-------
-source ~/.vim/plugged/vimrc-extensions/plugin_configs.vim
+source ~/.vim/plugged/vimrc-extension/plugin_configs.vim
 
 "---------Compile Mappings------
-source ~/.vim/plugged/vimrc-extensions/compile.vim
+source ~/.vim/plugged/vimrc-extension/compile.vim
