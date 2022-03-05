@@ -2,7 +2,7 @@
 
 # ------------------Aliases for System--------------------
 # - System Update
-alias upgrade='sudo apt update && sudo apt full-upgrade -y'
+alias upgrade='sudo parrot-upgrade -y'
 
 # - Clear Terminal
 alias c='clear'

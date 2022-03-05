@@ -3,12 +3,12 @@
 # System Update/Upgrade
 echo Your system will be setup immediately!
 sleep 5
-sudo apt update && sudo apt full-upgrade -y
+sudo parrot-upgrade
 echo System Updated/Upgraded...
 sleep 3
 
 # VMware Tools: Only for Parrot OS in a virtual machine
-sudp apt install open-vm-tools-desktop
+# sudo apt install open-vm-tools-desktop
 
 # Neofetch
 sudo apt install neofetch
@@ -41,7 +41,7 @@ cd && echo Setting up dotfiles...
 sleep 3
 
 # Removing existing dotfiles
-sudo rm -r .bashrc .vimrc .gitconfig .bash_aliases
+sudo rm -r ~/.bashrc ~/.vimrc ~/.gitconfig ~/.bash_aliases
 echo dotfiles have been removed...
 sleep 2
 
@@ -70,8 +70,7 @@ echo Setting up vim...
 sleep 5
 
 # Remove Neovim
-sudo rm -r /usr/bin/vim /usr/bin/nvim
-echo Removed existing installation of neovim...
+sudo apt remove neovim
 
 # Vim
 sudo apt install vim

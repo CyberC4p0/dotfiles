@@ -102,22 +102,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-function hex-encode()
-{
-  echo "$@" | xxd -p
-}
-
-function hex-decode()
-{
-  echo "$@" | xxd -p -r
-}
-
-function rot13()
-{
-  echo "$@" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
-}
-
-
 # some more ls aliases
 alias ll='ls -lh'
 alias la='ls -lha'
