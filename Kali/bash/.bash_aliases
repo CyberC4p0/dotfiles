@@ -14,9 +14,6 @@ alias re='reset'
 # - Tree
 alias trea='tree -a'
 
-# - xrdp
-alias guistr='sudo service xrdp start'
-
 #----------------------------Git--------------------------
 
 # - Git Status
@@ -41,15 +38,6 @@ alias gpull='git pull'
 alias gclo='git clone'
 
 # -----------Aliases for Changing Directories-------------
-
-# - Windows Home Directory
-alias home='cd /mnt/c/Users/jmemb'
-
-# - Windows File Explorer in Current Directory
-alias explorer='explorer.exe .'
-
-# - Change Directory to Programming Directory
-alias prog='cd /mnt/f/Programming/'
 
 # - Change Directory to Dotfiles Directory
 alias dotfiles='cd ~/dotfiles'
