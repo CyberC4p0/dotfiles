@@ -31,7 +31,7 @@ set nocompatible
 let mapleader=","
 set backspace=2
 set belloff=all
-set guifont=Consolas:h12
+set guifont=Consolas:h10
 :set guioptions-=m
 :set guioptions-=T
 :set guioptions-=r
