@@ -19,6 +19,7 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'wojciechkepka/vim-github-dark'
 
 call plug#end()
 
