@@ -44,7 +44,7 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 "-------------Fullscreen-----------
-map <Leader>f :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+map <C-f> :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 
 "--------------Source--------------
 map <F12> :source %<CR>
