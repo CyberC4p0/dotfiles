@@ -1,4 +1,4 @@
-# Windows Tree
+# Directory Tree
 
 ```
 │   setup.ps1
