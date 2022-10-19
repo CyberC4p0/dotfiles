@@ -19,12 +19,30 @@ endfunction
 set statusline+=%{GitStatus()}
 
 set signcolumn=no
-"--------------Gruvbox------------
-let &t_Co=256
-let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_termcolors=256
-let g:gruvbox_hls_cursor= 'orange'
+
+"----------Colorscheme Toggle------
+"Default: Gruvbox Dark - Value 0 equals Gruvbox Dark - Value 1 equals Gruvbox Light
+let g:gruvbox_contrast_dark = 'medium' 
 colorscheme gruvbox
+
+let s:current_colorscheme = 0
+if s:current_colorscheme == 0
+    function! Colorscheme_Toggle()
+        if s:current_colorscheme == 0
+			let g:gruvbox_contrast_light = 'soft'
+			colorscheme gruvbox
+			set background=light
+			let s:current_colorscheme = 1
+        else
+			let g:gruvbox_contrast_dark = 'medium' 
+            colorscheme gruvbox
+			set background=dark
+            let s:current_colorscheme = 0
+        endif
+    endfunction
+    command! ColorschemeToggle execute "call Colorscheme_Toggle()"
+endif
+map <Leader>c :ColorschemeToggle<CR>
 
 "-----------Vim Airline-----------
 let g:airline_theme='gruvbox'

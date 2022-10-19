@@ -10,7 +10,6 @@ set relativenumber
 set number
 set smartindent
 set nowrap
-set termguicolors
 set smartcase
 set noswapfile
 set nobackup
@@ -35,12 +34,12 @@ set wildmenu
 set complete+=kspell
 set completeopt=menuone,longest,preview
 set shortmess+=c
-set background=dark
 set nocompatible
 let mapleader=","
 set backspace=2
 set belloff=all
-set guifont=Dina:h10
+set background=dark
+set guifont=Dina:h11
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
