@@ -35,7 +35,6 @@ nnoremap O O<Esc>
 
 "------------Vim Session-----------
 nnoremap <Leader>m :wa <bar> :mksession!<CR>
-nnoremap <Leader>ms :source Session.vim<CR>
 
 "------------Source----------------
 nnoremap <F12> :source Session.vim<CR>
