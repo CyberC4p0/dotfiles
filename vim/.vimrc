@@ -1,5 +1,10 @@
 "-------External Vim Scripts-----
-cd ~/Projects/
+let s:current_file = expand('%:t')
+if s:current_file == ''
+	cd ~\Projects\
+else
+	;
+endif
 
 source ~/vimfiles/plugin/vimrc-extensions/set.vim
 source ~/vimfiles/plugin/vimrc-extensions/built-in_remaps.vim

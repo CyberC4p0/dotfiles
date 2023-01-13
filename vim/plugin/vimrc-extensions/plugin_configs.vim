@@ -22,7 +22,9 @@ set signcolumn=no
 
 "----------Colorscheme Toggle------
 "Default: Gruvbox Dark - Value 0 equals Gruvbox Dark - Value 1 equals Gruvbox Light
-let g:gruvbox_contrast_dark = 'medium' 
+let g:gruvbox_contrast_dark = 'medium'
+let &t_Co=256
+let g:gruvbox_termcolors=256
 colorscheme gruvbox
 
 let s:current_colorscheme = 0
