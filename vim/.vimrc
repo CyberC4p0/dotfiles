@@ -1,4 +1,3 @@
-"-------External Vim Scripts-----
 let s:current_file = expand('%:t')
 if s:current_file == ''
 	cd ~\Projects\
@@ -6,6 +5,7 @@ else
 	;
 endif
 
+"-------External Vim Scripts-----
 source ~/vimfiles/plugin/vimrc-extensions/set.vim
 source ~/vimfiles/plugin/vimrc-extensions/built-in_remaps.vim
 
@@ -27,5 +27,5 @@ Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
 
-"---------Vim Plug Config-------
+"---------Vim Plugin Config-------
 source ~/vimfiles/plugin/vimrc-extensions/plugin_configs.vim
