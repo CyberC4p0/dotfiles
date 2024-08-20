@@ -1,0 +1,5 @@
+[wsl2]
+memory=4GB
+swap=4GB
+swapFile=C:\\swapfile.vhdx
+# kernel=C:\\Users\\jmemb\\vmlinux

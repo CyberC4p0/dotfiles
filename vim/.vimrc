@@ -1,16 +1,11 @@
-let s:current_file = expand('%:t')
-if s:current_file == ''
-	cd ~/Projects/
-else
-	;
-endif
+filetype plugin on
 
 "-------External Vim Scripts-----
 source ~/vimfiles/plugin/vimrc-extensions/set.vim
 source ~/vimfiles/plugin/vimrc-extensions/built-in_remaps.vim
 
 "-----------Vim Plug-------------
-call plug#begin('~/.vim/plugged')
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 Plug '907th/vim-auto-save'
 Plug 'preservim/nerdtree'

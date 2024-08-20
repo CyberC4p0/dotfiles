@@ -14,8 +14,10 @@ nnoremap <C-k> :wincmd k<CR>
 nnoremap <C-l> :wincmd l<CR>
 
 "------------Terminal--------------
-map <Leader>tv :vertical terminal++close pwsh.exe -noprofile -noexit -command cd ~/Projects/<CR>
-map <Leader>th :terminal++close pwsh.exe -noprofile -noexit -command cd ~/Projects/<CR>
+"map <Leader>tv :vertical terminal++close pwsh.exe -noprofile -noexit -command cd ~/Projects/<CR>
+"map <Leader>th :terminal++close pwsh.exe -noprofile -noexit -command cd ~/Projects/<CR>
+map <Leader>tv :vertical terminal++close<CR>
+map <Leader>th :terminal++close<CR>
 
 "------------Tabs------------------
 nnoremap <Leader>t :tabnew<CR>
@@ -23,11 +25,16 @@ nnoremap <Leader>tq :tabo!<CR>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
-"-------------Fullscreen-----------
-nnoremap <Leader>f :cal libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+"---------Copy To Clipboard-------
+function! CopyToClipboard()
+    normal! gv
+    silent execute 'normal! "+y'
+endfunction
+
+vnoremap <C-c> :call CopyToClipboard()<CR>
 
 "-----------New Vim Workstation----
-nnoremap <F8> :wa <bar> :new <bar> :tabo! <bar> :only! <bar> :%bd! <bar> :cd ~\Projects<CR>
+nnoremap <F8> :wa <bar> :new <bar> :tabo! <bar> :only! <bar> :%bd! <bar> :cd ~/<CR>
 
 "------------New Line--------------
 nnoremap o o<Esc>
