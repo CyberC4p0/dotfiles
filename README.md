@@ -1,8 +1,10 @@
 # Directory Tree
 
 ```
+dotfiles
+├── linux
+│   └── setup.sh
 ├── README.md
-├── setup.ps1
 ├── vim
 │   ├── images
 │   │   ├── vim-dark.png
@@ -27,5 +29,6 @@
     │   └── DinaRemaster
     │       ├── DinaRemasterCollection.ttc
     │       └── DinaRemasterII.ttc
-    └── gruvbox_dark.json
+    ├── gruvbox_dark.json
+    └── setup.ps1
 ```
