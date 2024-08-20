@@ -1,0 +1,2 @@
+alias mem="free -m"
+alias offsec="sudo openvpn --config ~/Documents/offsec/universal.ovpn &"
