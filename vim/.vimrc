@@ -1,8 +1,8 @@
 filetype plugin on
 
 "-------External Vim Scripts-----
-source ~/vimfiles/plugin/vimrc-extensions/set.vim
-source ~/vimfiles/plugin/vimrc-extensions/built-in_remaps.vim
+source ~/.vim/vimrc-extensions/set.vim
+source ~/.vim/vimrc-extensions/built-in_remaps.vim
 
 "-----------Vim Plug-------------
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
@@ -23,4 +23,4 @@ Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 "---------Vim Plugin Config-------
-source ~/vimfiles/plugin/vimrc-extensions/plugin_configs.vim
+source ~/.vim/vimrc-extensions/plugin_configs.vim

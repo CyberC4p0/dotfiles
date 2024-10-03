@@ -5,6 +5,7 @@ au BufNewFile,BufRead *.xaml setf xml
 
 "-----------------Set---------------
 set tabstop=4 softtabstop=4
+set foldmethod=indent
 set shiftwidth=4
 set relativenumber
 set number

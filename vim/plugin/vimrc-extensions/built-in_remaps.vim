@@ -50,3 +50,7 @@ nnoremap <F12> :source Session.vim<CR>
 nnoremap <C-CR> :nohlsearch<CR>
 nnoremap <C-Up> N
 nnoremap <C-Down> n
+
+"----------Toggle Folds------------
+nnoremap <Leader>f za
+nnoremap <Leader>a zi
