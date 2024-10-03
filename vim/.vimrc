@@ -19,6 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/AutoComplPop'
+Plug 'github/copilot.vim'
 
 call plug#end()
 

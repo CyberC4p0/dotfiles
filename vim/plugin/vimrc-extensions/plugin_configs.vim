@@ -44,7 +44,7 @@ if s:current_colorscheme == 0
     endfunction
     command! ColorschemeToggle execute "call Colorscheme_Toggle()"
 endif
-map <Leader>c :ColorschemeToggle<CR>
+map <Leader>cs :ColorschemeToggle<CR>
 
 "-----------Vim Airline-----------
 let g:airline_theme='gruvbox'
@@ -57,3 +57,7 @@ let g:airline_solarized_bg='dark'
 "-----------Vim Fugitive-----------
 "Vim Fugitive
 set statusline+=%{FugitiveHead()}
+
+"-----------Copilot-----------
+let g:copilot#enabled = 1
+nnoremap <Leader>c :Copilot<CR>
